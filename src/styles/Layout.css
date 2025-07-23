@@ -1,0 +1,30 @@
+.layoutHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logoContainer .logo {
+    max-width: 80px;
+    pointer-events: none;
+}
+
+.navbar {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: #cbbcbc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #0d82dc;
+}
