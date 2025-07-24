@@ -1,0 +1,20 @@
+{
+    "nav": {
+        "home": "Home",
+        "projects": "Projects",
+        "skills": "Skills"
+    },
+    "intro": {
+        "greeting": "Hi, my name is",
+        "name": "Suheda Sener",
+        "paragraphs": [
+            "I build things for the web.",
+            "I’m an IT student passionate about developing practical and meaningful digital experiences from automating tasks to building dynamic web applications.",
+            "Currently, I’m exploring full-stack development, automation, and cloud platforms to create accessible, user-centered projects."
+        ]
+    },
+    "langSwitch": {
+        "en": "In English",
+        "fi": "Suomeksi"
+    }
+}

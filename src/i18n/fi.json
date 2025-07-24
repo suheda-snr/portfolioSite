@@ -1,0 +1,20 @@
+{
+    "nav": {
+        "home": "Etusivu",
+        "projects": "Projektit",
+        "skills": "Taidot"
+    },
+    "intro": {
+        "greeting": "Hei, olen",
+        "name": "Suheda Sener",
+        "paragraphs": [
+            "Suunnittelen ja toteutan verkkosivustoja.",
+            "Olen IT-alan opiskelija, joka on intohimoinen kehittämään käytännöllisiä ja merkityksellisiä digitaalisia ratkaisuja automatisoin prosesseja ja rakennan dynaamisia verkkosovelluksia.",
+            "Tällä hetkellä syvennyn full-stack-kehitykseen, automaatioon ja pilvipalveluihin luodakseni saavutettavia ja käyttäjäystävällisiä projekteja."
+        ]
+    },
+    "langSwitch": {
+        "en": "In English",
+        "fi": "Suomeksi"
+    }
+}

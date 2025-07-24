@@ -14,7 +14,7 @@ const TypingText: React.FC<TypingTextProps> = ({ text, start, className, typingS
     return (
         <span className={className}>
             {displayedText}
-            {isTyping && <span className="typing-cursor">|</span>}
+            {isTyping && <span className="typing-cursor" style={{ fontWeight: 'bold' }}>|</span>}
         </span>
     );
 };

@@ -1,34 +1,34 @@
 import React, { useState, useEffect } from 'react';
 import TypingText from './TypingText';
+import { useTranslation } from 'react-i18next';
+
 import '../styles/IntroSection.css';
 import profilePic from '../assets/profilePic.png';
 
-const introParagraphs = [
-    'I build things for the web.',
-    'I’m an IT student passionate about developing practical and meaningful digital experiences — from automating tasks to building dynamic web applications.',
-    'Currently, I’m exploring full-stack development, automation, and cloud platforms to create accessible, user-centered projects.',
-];
-
 const IntroSection: React.FC = () => {
+    const { t, i18n } = useTranslation();
+
     const [showGreeting, setShowGreeting] = useState(true);
     const [showName, setShowName] = useState(false);
     const [typedParagraphs, setTypedParagraphs] = useState<string[]>([]);
 
     useEffect(() => {
-        const charTypingDelay = 100;
-        const greetingDuration = 'Hi, my name is'.length * charTypingDelay;
-        const nameDuration = 'Suheda Sener'.length * charTypingDelay;
+        setTypedParagraphs([]); // Reset paragraphs when language changes
 
-        // Show name after greeting is done
+        const introParagraphs: string[] = t('intro.paragraphs', { returnObjects: true }) as string[];
+
+        const charTypingDelay = 100;
+        const greetingDuration = t('intro.greeting').length * charTypingDelay;
+        const nameDuration = t('intro.name').length * charTypingDelay;
+
         const timer1 = setTimeout(() => setShowName(true), greetingDuration + 50);
 
-        // Calculate cumulative duration for paragraphs
         let cumulativeDelay = greetingDuration + nameDuration + 150;
 
         const timers = introParagraphs.map((para, index) => {
             const paraDuration = para.length * charTypingDelay;
             const timer = setTimeout(() => {
-                setTypedParagraphs(prev => [...prev, para]);
+                setTypedParagraphs((prev) => [...prev, para]);
             }, cumulativeDelay);
             cumulativeDelay += paraDuration + 250;
             return timer;
@@ -36,22 +36,22 @@ const IntroSection: React.FC = () => {
 
         return () => {
             clearTimeout(timer1);
-            timers.forEach(timer => clearTimeout(timer));
+            timers.forEach((timer) => clearTimeout(timer));
         };
-    }, []);
+    }, [t, i18n.language]);
 
     return (
         <div className="intro-container">
             <section id="intro" className="text-section">
                 <TypingText
-                    text="Hi, my name is"
+                    text={t('intro.greeting')}
                     start={showGreeting}
                     className="greeting-text"
                     typingSpeed={100}
                 />
                 <br />
                 <TypingText
-                    text="Suheda Sener"
+                    text={t('intro.name')}
                     start={showName}
                     className="name-text"
                     typingSpeed={100}
@@ -63,7 +63,7 @@ const IntroSection: React.FC = () => {
                 ))}
             </section>
             <div className="image-section">
-                <img src={profilePic} alt="Suheda Sener" className="profile-image" />
+                <img src={profilePic} alt={t('intro.name')} className="profile-image" />
             </div>
         </div>
     );

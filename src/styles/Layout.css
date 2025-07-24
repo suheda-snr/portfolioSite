@@ -28,3 +28,18 @@
 .navbar a:hover {
     color: #0d82dc;
 }
+
+.language-toggle-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.language-toggle-button:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}

@@ -6,6 +6,8 @@ import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import SocialSidebar from './components/SocialSidebar';
 
+import './i18n/i18n';
+
 function App() {
   return (
     <div className="App">
