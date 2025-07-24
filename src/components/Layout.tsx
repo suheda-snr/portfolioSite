@@ -15,24 +15,45 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
 
     return (
         <>
-            <header className="layoutHeader">
-                <div className="logoContainer">
-                    <Link to="/">
+            <header className="layoutHeader navbar navbar-expand-lg">
+                <div className="container-fluid">
+                    <Link className="navbar-brand" to="/">
                         <img src={logo} alt="Logo" className="logo" />
                     </Link>
-                </div>
-                <nav className="navbar">
-                    <Link to="/">{t('nav.home')}</Link>
-                    <a href="#projects">{t('nav.projects')}</a>
-                    <a href="#blogs">{t('nav.skills')}</a>
-                    <button onClick={toggleLanguage} className="language-toggle-button">
-                        <ReactCountryFlag
-                            countryCode={i18n.language === 'en' ? 'GB' : 'FI'}
-                            svg
-                            style={{ width: '1.5em', height: '1.5em', marginRight: '0.5em' }}
-                        />
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                </nav>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto align-items-center gap-3">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/">{t('nav.home')}</Link>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#projects">{t('nav.projects')}</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#blogs">{t('nav.skills')}</a>
+                            </li>
+                            <li className="nav-item">
+                                <button onClick={toggleLanguage} className="language-toggle-button nav-link">
+                                    <ReactCountryFlag
+                                        countryCode={i18n.language === 'en' ? 'GB' : 'FI'}
+                                        svg
+                                        style={{ width: '1.5em', height: '1.5em', marginRight: '0.5em' }}
+                                    />
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </header>
             <main>{children}</main>
         </>

@@ -1,21 +1,11 @@
 .layoutHeader {
     display: flex;
     align-items: center;
-    padding: 10px 50px;
+    padding: 10px 40px !important;
     position: sticky;
     top: 0;
     z-index: 1000;
-}
-
-.logoContainer .logo {
-    max-width: 80px;
-    pointer-events: none;
-}
-
-.navbar {
-    margin-left: auto;
-    display: flex;
-    gap: 20px;
+    background-color: transparent !important;
 }
 
 .navbar a {
@@ -25,8 +15,15 @@
     font-size: 16px;
 }
 
-.navbar a:hover {
-    color: #0d82dc;
+.navbar-toggler {
+    border: none !important;
+    color: #cbbcbc !important;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    pointer-events: none;
 }
 
 .language-toggle-button {
@@ -34,9 +31,9 @@
     border: none;
     display: flex;
     align-items: center;
-    font-size: 18px;
-    margin-top: -5px;
+    font-size: 16px !important;
     cursor: pointer;
+    padding: 0;
 }
 
 .language-toggle-button:hover {
