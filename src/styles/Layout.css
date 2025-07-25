@@ -1,7 +1,7 @@
 .layoutHeader {
     display: flex;
     align-items: center;
-    padding: 10px 40px !important;
+    padding: 10px 10px !important;
     position: sticky;
     top: 0;
     z-index: 1000;

@@ -4,7 +4,8 @@ import './App.css';
 
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
-import SocialSidebar from './components/SocialSidebar';
+import FloatingContactBar from './components/FloatingContactBar';
+//import SectionSidebar from './components/SectionSidebar';
 
 import './i18n/i18n';
 
@@ -12,7 +13,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <SocialSidebar />
+        {/*<SectionSidebar />*/}
+        <FloatingContactBar />
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />

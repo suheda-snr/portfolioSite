@@ -1,0 +1,50 @@
+.floating-contact-bar {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    padding: 0.45rem 0.9rem;
+    border-radius: 16px;
+    z-index: 1000;
+}
+
+.floating-contact-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.2s;
+}
+
+.floating-contact-bar a:hover {
+    transform: scale(1.2);
+}
+
+.floating-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0.6rem 0.8rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close-bar-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
