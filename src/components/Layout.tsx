@@ -21,7 +21,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                         <img src={logo} alt="Logo" className="logo" />
                     </Link>
                     <button
-                        className="navbar-toggler"
+                        className="navbar-toggler custom-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
@@ -54,7 +54,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                         </ul>
                     </div>
                 </div>
-            </header>
+            </header >
             <main>{children}</main>
         </>
     );
