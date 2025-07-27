@@ -21,6 +21,18 @@
     font-size: 16px;
 }
 
+.navbar a:hover {
+    color: #ff4500;
+    /* A contrasting shade of orange */
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.navbar a:focus {
+    color: #cbbcbc;
+    font-size: 18px;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23cbbcbc' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
