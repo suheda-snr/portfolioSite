@@ -32,15 +32,6 @@ const FloatingContactBar: React.FC = () => {
 
             {(showBar || !isMobile) && (
                 <div className="floating-contact-bar">
-                    {isMobile && (
-                        <button
-                            className="close-bar-button"
-                            onClick={toggleBar}
-                            aria-label="Hide Contact Bar"
-                        >
-                            ×
-                        </button>
-                    )}
 
                     <a href="mailto:sener.suheda@hotmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                         <svg width="28" height="28" fill="#fff" viewBox="0 0 24 24">
@@ -57,6 +48,16 @@ const FloatingContactBar: React.FC = () => {
                             <path d="M20.5 3h-17A1.5 1.5 0 002 4.5v15A1.5 1.5 0 003.5 21h17a1.5 1.5 0 001.5-1.5v-15A1.5 1.5 0 0020.5 3zM8.3 18H5.7V9.5h2.6V18zm-1.3-9.6a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM18.3 18h-2.6v-4.1c0-1-.4-1.6-1.2-1.6-.6 0-1.1.4-1.3.9-.1.2-.1.5-.1.8V18h-2.6V9.5h2.6v1.2a2.4 2.4 0 012.2-1.2c1.6 0 2.8 1 2.8 3.3V18z" />
                         </svg>
                     </a>
+
+                    {isMobile && (
+                        <button
+                            className="close-bar-button"
+                            onClick={toggleBar}
+                            aria-label="Hide Contact Bar"
+                        >
+                            ×
+                        </button>
+                    )}
                 </div>
             )}
         </>
