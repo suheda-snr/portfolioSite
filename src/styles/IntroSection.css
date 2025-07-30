@@ -7,6 +7,8 @@
 .intro-section {
     color: #fff;
     min-height: 80vh;
+    display: flex;
+    justify-content: center;
 }
 
 /* Image */
@@ -30,7 +32,7 @@
 
 /* Typing styles */
 .greeting-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #a8a8a8;
     font-family: 'Emitha', 'Arial', sans-serif;
     margin-bottom: 1rem;
@@ -38,7 +40,7 @@
 }
 
 .name-text {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #ffffff;
     margin: 0.5rem 0;
@@ -125,10 +127,39 @@
 
 @media (max-width: 480px) {
     .name-text {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 
     .profile-image {
-        max-height: 200px;
+        max-height: 250px;
+    }
+
+    .paragraph-container {
+        margin-top: 1rem;
+    }
+
+    .intro-section {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .name-text {
+        font-size: 2rem;
+    }
+
+    .greeting-text {
+        font-size: 0.9rem;
+    }
+
+    .paragraph-text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-height: 1000px) {
+    .intro-section {
+        display: flex;
+        align-items: center;
     }
 }

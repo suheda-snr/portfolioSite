@@ -40,7 +40,7 @@ const IntroSection: React.FC = () => {
 
     return (
         <div className="intro-wrapper">
-            <div className="container intro-section py-5 px-4 px-md-5">
+            <div className="container intro-section px-4 px-md-5">
                 <div className="row align-items-center">
                     <section id="intro" className="col-lg-6 text-section mb-4 mb-lg-0">
                         <TypingText
