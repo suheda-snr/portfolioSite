@@ -1,0 +1,10 @@
+@media (min-width: 780px) {
+    .about-wrapper {
+        padding-left: 8rem;
+    }
+}
+
+.about-section {
+    color: #fff;
+    min-height: 80vh;
+}

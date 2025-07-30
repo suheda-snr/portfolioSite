@@ -1,10 +1,14 @@
 import React from 'react';
+import '../styles/AboutSection.css';
 
 const AboutSection: React.FC = () => {
     return (
-        <div id="about" className="intro-section">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects and skills.</p>
+        <div className="about-wrapper">
+            <div className="container about-section py-5 px-4 px-md-5">
+                <div className="row align-items-center">
+                    This is the About Section.
+                </div>
+            </div>
         </div>
     );
 }

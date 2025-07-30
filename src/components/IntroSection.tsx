@@ -13,8 +13,7 @@ const IntroSection: React.FC = () => {
     const [typedParagraphs, setTypedParagraphs] = useState<string[]>([]);
 
     useEffect(() => {
-        setTypedParagraphs([]); // Reset paragraphs when language changes
-
+        setTypedParagraphs([]);
         const introParagraphs: string[] = t('intro.paragraphs', { returnObjects: true }) as string[];
 
         const charTypingDelay = 100;
@@ -24,7 +23,6 @@ const IntroSection: React.FC = () => {
         const timer1 = setTimeout(() => setShowName(true), greetingDuration + 50);
 
         let cumulativeDelay = greetingDuration + nameDuration + 150;
-
         const timers = introParagraphs.map((para, index) => {
             const paraDuration = para.length * charTypingDelay;
             const timer = setTimeout(() => {
@@ -41,29 +39,33 @@ const IntroSection: React.FC = () => {
     }, [t, i18n.language]);
 
     return (
-        <div className="intro-container">
-            <section id="intro" className="text-section">
-                <TypingText
-                    text={t('intro.greeting')}
-                    start={showGreeting}
-                    className="greeting-text"
-                    typingSpeed={100}
-                />
-                <br />
-                <TypingText
-                    text={t('intro.name')}
-                    start={showName}
-                    className="name-text"
-                    typingSpeed={100}
-                />
-                {typedParagraphs.map((para, i) => (
-                    <div key={i} className="paragraph-container">
-                        <TypingText text={para} start={true} className="paragraph-text" typingSpeed={100} />
+        <div className="intro-wrapper">
+            <div className="container intro-section py-5 px-4 px-md-5">
+                <div className="row align-items-center">
+                    <section id="intro" className="col-lg-6 text-section mb-4 mb-lg-0">
+                        <TypingText
+                            text={t('intro.greeting')}
+                            start={showGreeting}
+                            className="greeting-text"
+                            typingSpeed={100}
+                        />
+                        <br />
+                        <TypingText
+                            text={t('intro.name')}
+                            start={showName}
+                            className="name-text"
+                            typingSpeed={100}
+                        />
+                        {typedParagraphs.map((para, i) => (
+                            <div key={i} className="paragraph-container">
+                                <TypingText text={para} start={true} className="paragraph-text" typingSpeed={100} />
+                            </div>
+                        ))}
+                    </section>
+                    <div className="col-lg-6 text-center image-section">
+                        <img src={profilePic} alt={t('intro.name')} className="profile-image img-fluid" />
                     </div>
-                ))}
-            </section>
-            <div className="image-section">
-                <img src={profilePic} alt={t('intro.name')} className="profile-image" />
+                </div>
             </div>
         </div>
     );

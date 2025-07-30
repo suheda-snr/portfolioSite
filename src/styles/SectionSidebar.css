@@ -34,23 +34,16 @@
 
 .section-sidebar a:hover {
     transform: scale(1.1);
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
     font-weight: bold;
 }
 
-.section-sidebar a:hover::before {
-    opacity: 1;
-    transform: scale(1.1);
-    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
-}
-
-.section-sidebar .active a {
+.section-sidebar a.active {
     color: #00BFFF;
     font-weight: 600;
     transform: translateX(3px);
 }
 
-.section-sidebar .active a::before {
+.section-sidebar a.active::before {
     opacity: 1;
     transform: translateY(-50%) scale(1.2);
 }
