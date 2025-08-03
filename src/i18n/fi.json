@@ -8,13 +8,31 @@
         "greeting": "Hei, olen",
         "name": "Suheda Sener",
         "paragraphs": [
-            "Suunnittelen ja toteutan verkkosivustoja.",
-            "Olen IT-alan opiskelija, joka on intohimoinen kehittämään käytännöllisiä ja merkityksellisiä digitaalisia ratkaisuja automatisoin prosesseja ja rakennan dynaamisia verkkosovelluksia.",
-            "Tällä hetkellä syvennyn full-stack-kehitykseen, automaatioon ja pilvipalveluihin luodakseni saavutettavia ja käyttäjäystävällisiä projekteja."
+            "Rakastan tehdä asioita, jotka auttavat arkea – erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
+            "Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
         ]
     },
     "langSwitch": {
         "en": "In English",
         "fi": "Suomeksi"
+    },
+    "about": {
+        "title": "Tietoa minusta",
+        "description": "Hei, olen Şüheda, utelias kehittäjä ja opiskelija, joka rakastaa rakentaa asioita, jotka alkavat yksinkertaisista ajatuksista ja päätyvät hyödyllisiksi digitaalisiksi työkaluiksi, jotka helpottavat elämää.",
+        "story": "Kiinnostukseni koodaamiseen alkoi, kun vaihdoin metallurgiainsinöörin opinnoista IT-alalle ja huomasin voivani viettää tunteja ongelmia ratkoen ja työkaluja rakentaen ilman, että aika tuntui kuluvan. Siitä lähtien olen kulkenut oppimisen, rakentamisen ja kasvun polkua ohjelmistokehityksen maailmassa.",
+        "experience": "Opiskelen parhaillani tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack -projekteissa osana opintojani ja omaa kiinnostustani.",
+        "techIntro": "Teknologiat, joiden parissa olen viime aikoina työskennellyt, ovat:",
+        "techList": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "React",
+            "Node.js",
+            "PostgreSQL",
+            "Firebase",
+            "Azure",
+            "Express.js",
+            "Docker",
+            "Java"
+        ]
     }
 }

@@ -8,13 +8,31 @@
         "greeting": "Hi, my name is",
         "name": "Suheda Sener",
         "paragraphs": [
-            "I build things for the web.",
-            "I’m an IT student passionate about developing practical and meaningful digital experiences from automating tasks to building dynamic web applications.",
-            "Currently, I’m exploring full-stack development, automation, and cloud platforms to create accessible, user-centered projects."
+            "I love creating things that make everyday life easier, especially when they start from a small idea and turn into a working solution.",
+            "I'm curious, practical, and enjoy building something visible and useful digitally."
         ]
     },
     "langSwitch": {
         "en": "In English",
         "fi": "Suomeksi"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Hi, I'm Şüheda, a curious developer and student who loves building things that start as simple thoughts and end up as useful digital tools that make life easier.",
+        "story": "My interest in coding began when I switched from Metallurgical Engineering to IT and realized I could spend hours solving problems and building tools without noticing time pass. Since then, I’ve been on a journey to learn, build, and grow in the world of software development.",
+        "experience": "I am currently studying Information Technology at Oulu University of Applied Sciences. During my studies, I took part in a cross-university Erasmus+ project in the Netherlands. Throughout my education, I have worked on several full-stack projects as part of coursework and personal interest.",
+        "techIntro": "Technologies I've been working with recently include:",
+        "techList": [
+            "JavaScript (ES6+)",
+            "TypeScript",
+            "React",
+            "Node.js",
+            "PostgreSQL",
+            "Firebase",
+            "Azure",
+            "Express.js",
+            "Docker",
+            "Java"
+        ]
     }
 }
