@@ -1,0 +1,83 @@
+.projects-wrapper {
+    padding-left: 8rem;
+    color: #fff;
+    min-height: 80vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.projects-section {
+    color: #d3d3d3;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: 'Emitha', 'Arial', sans-serif;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.section-title::before {
+    content: '02.';
+    position: absolute;
+    left: 0;
+    top: 20%;
+    color: #00BFFF;
+    font-weight: 700;
+    font-family: 'Emitha', 'Arial', sans-serif;
+    font-size: 1.3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    gap: 2rem;
+    width: 100%;
+}
+
+.see-all-btn {
+    background-color: #00BFFF;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.see-all-btn:hover {
+    background-color: #00aaff;
+}
+
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        /* Adjusts card width */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-wrapper {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        /* Ensures single column on small screens */
+    }
+}

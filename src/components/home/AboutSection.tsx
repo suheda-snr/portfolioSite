@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import '../styles/AboutSection.css';
+import '../../styles/home/AboutSection.css';
 
 const AboutSection: React.FC = () => {
     const { t } = useTranslation();

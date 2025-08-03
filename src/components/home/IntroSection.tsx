@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import TypingText from './TypingText';
+import TypingText from '../TypingText';
 import { useTranslation } from 'react-i18next';
 
-import '../styles/IntroSection.css';
-import profilePic from '../assets/profilePic.png';
+import '../../styles/home/IntroSection.css';
+import profilePic from '../../assets/profilePic.png';
 
 const IntroSection: React.FC = () => {
     const { t, i18n } = useTranslation();

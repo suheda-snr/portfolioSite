@@ -1,0 +1,144 @@
+.project-card {
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.project-image {
+    flex: 0 0 50%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.project-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 42, 68, 0.6);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.project-img {
+    max-height: 250px;
+    object-fit: cover;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.project-image:hover .project-img {
+    opacity: 1;
+}
+
+.project-content {
+    color: #d3d3d3;
+    max-width: 55%;
+    width: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.featured-label {
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'Emitha', 'Arial', sans-serif;
+    margin-bottom: 0.5rem;
+    text-align: right;
+}
+
+.project-title {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    font-family: 'Emitha', 'Arial', sans-serif;
+}
+
+.project-details {
+    background-color: rgba(30, 42, 68, 0.95);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #a8a8a8;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.tech-item {
+    color: #fff;
+    padding: 0.2rem 0.7rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.project-links {
+    display: block;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.link-item {
+    color: #00BFFF;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.link-item:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .featured-project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-image {
+        flex: 0 0 100%;
+    }
+
+    .project-content {
+        flex: 0 0 100%;
+    }
+
+    .project-title {
+        font-size: 1.5rem;
+    }
+
+    .project-description {
+        font-size: 1rem;
+    }
+
+    .tech-stack,
+    .project-links {
+        justify-content: center;
+    }
+}

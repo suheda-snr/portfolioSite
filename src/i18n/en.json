@@ -4,6 +4,10 @@
         "projects": "Projects",
         "skills": "Skills"
     },
+    "sidebar": {
+        "intro": "Intro",
+        "about": "About Me"
+    },
     "intro": {
         "greeting": "Hi, my name is",
         "name": "Suheda Sener",
@@ -27,12 +31,19 @@
             "TypeScript",
             "React",
             "Node.js",
-            "PostgreSQL",
-            "Firebase",
             "Azure",
             "Express.js",
             "Docker",
             "Java"
         ]
+    },
+    "projects": {
+        "featured": {
+            "label": "Featured Project",
+            "title": "Halcyon Theme",
+            "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm."
+        },
+        "featuredSection": "Featured Projects",
+        "seeAll": "See All"
     }
 }

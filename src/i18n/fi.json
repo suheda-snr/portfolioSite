@@ -4,6 +4,10 @@
         "projects": "Projektit",
         "skills": "Taidot"
     },
+    "sidebar": {
+        "intro": "Johdanto",
+        "about": "Tietoa minusta"
+    },
     "intro": {
         "greeting": "Hei, olen",
         "name": "Suheda Sener",
@@ -27,8 +31,6 @@
             "TypeScript",
             "React",
             "Node.js",
-            "PostgreSQL",
-            "Firebase",
             "Azure",
             "Express.js",
             "Docker",

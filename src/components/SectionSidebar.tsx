@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/SectionSidebar.css';
+import { useTranslation } from 'react-i18next';
 
 const SectionSidebar: React.FC = () => {
     const [activeSection, setActiveSection] = useState('intro');
-    const sections = ['intro', 'about'];
+    const { t } = useTranslation();
+    const sections = [t('sidebar.intro'), t('sidebar.about')];
 
     useEffect(() => {
         const scrollContainer = document.querySelector('.homepage');
