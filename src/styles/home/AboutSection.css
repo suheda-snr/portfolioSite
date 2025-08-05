@@ -94,7 +94,6 @@
         padding-left: 1rem;
         padding-right: 1rem;
         min-height: auto;
-        /* Remove fixed height constraint */
         padding-top: 2rem;
         padding-bottom: 2rem;
         align-items: flex-start;
@@ -153,7 +152,7 @@
     }
 
     .about-section p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1.6;
         margin-bottom: 1rem;
     }
