@@ -29,7 +29,6 @@
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    /* Single column by default */
     gap: 2rem;
     width: 100%;
 }
@@ -53,24 +52,75 @@
     background-color: #00aaff;
 }
 
-@media (min-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
     .projects-wrapper {
-        padding-left: 2rem;
+        padding-left: 4rem;
         padding-right: 2rem;
     }
 
     .section-title {
         font-size: 1.5rem;
+        padding-left: 2rem;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    .projects-wrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        min-height: auto;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title::before {
+        font-size: 1.1rem;
     }
 
     .projects-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .see-all-btn {
+        margin-top: 1.5rem;
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+    .projects-wrapper {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        padding-left: 1.5rem;
+    }
+
+    .section-title::before {
+        font-size: 1rem;
+    }
+
+    .see-all-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Desktop breakpoints */
+@media (min-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     }
 }
 
