@@ -18,4 +18,22 @@ body {
 .section {
     height: 100vh;
     scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensuring content fits on mobile while keeping scroll snap */
+@media (max-width: 768px) {
+    .section {
+        overflow-y: auto;
+        scroll-snap-stop: always;
+    }
+}
+
+/* Very small mobile adjustments */
+@media (max-width: 480px) {
+    .homepage {
+        scroll-snap-type: y mandatory;
+        scroll-padding-top: 0;
+    }
 }
