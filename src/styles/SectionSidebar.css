@@ -30,6 +30,9 @@
     padding: 6px 10px;
     border-radius: 4px;
     transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    display: block;
+    min-height: 1.25rem;
+    line-height: 1.25rem;
 }
 
 .section-sidebar a:hover {
@@ -41,6 +44,7 @@
     color: #00BFFF;
     font-weight: 600;
     transform: translateX(3px);
+    font-size: 17px;
 }
 
 .section-sidebar a.active::before {
@@ -53,9 +57,10 @@
     left: 2px;
     width: 2px;
     height: 1.25rem;
-    background: linear-gradient(to bottom, #00BFFF 0%, transparent 100%);
-    opacity: 0.7;
-    transition: top 0.3s ease;
+    background: linear-gradient(to bottom, #00BFFF 0%, #00BFFF 70%, transparent 100%);
+    opacity: 0.8;
+    transition: top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 1px;
 }
 
 @keyframes fadeIn {

@@ -16,36 +16,82 @@ const SectionSidebar: React.FC = () => {
 
         const handleScroll = () => {
             console.log('Scroll event triggered');
-            let currentSection = 'intro';
-            let minDistance = Infinity;
+            let currentSection = 'intro'; // Default to intro
 
-            for (let section of sections) {
+            // Get scroll position
+            const scrollTop = scrollContainer.scrollTop;
+            const viewportHeight = window.innerHeight;
+
+            console.log(`Scroll position: ${scrollTop}, Viewport height: ${viewportHeight}`);
+
+            // Check each section to find which one is most visible
+            for (let i = 0; i < sections.length; i++) {
+                const section = sections[i];
                 const element = document.getElementById(section);
+
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    const distance = Math.abs(rect.top);
-                    console.log(`Section: ${section}, Top: ${rect.top}, Distance: ${distance}`);
-                    // Adjust threshold for scroll snapping
-                    if (rect.top >= -50 && rect.top <= window.innerHeight * 0.2 && distance < minDistance) {
+                    const elementTop = rect.top;
+                    const elementBottom = rect.bottom;
+
+                    console.log(`Section: ${section}, Top: ${elementTop}, Bottom: ${elementBottom}`);
+
+                    // Check if section is in viewport (more lenient threshold)
+                    // A section is considered active if it's within the upper 60% of the viewport
+                    if (elementTop <= viewportHeight * 0.6 && elementBottom > 0) {
                         currentSection = section;
-                        minDistance = distance;
+                        console.log(`Setting active section to: ${section}`);
+                    }
+
+                    // Special handling for the last section (projects)
+                    // If we're near the bottom of the page, make sure projects is active
+                    if (section === 'projects' && elementTop <= viewportHeight * 0.8) {
+                        currentSection = 'projects';
+                        console.log(`Setting active section to projects (bottom threshold)`);
                     }
                 } else {
                     console.log(`Section not found: ${section}`);
                 }
             }
+
+            // Additional check: if scroll is at very bottom, ensure last section is active
+            const isAtBottom = scrollTop + viewportHeight >= scrollContainer.scrollHeight - 50;
+            if (isAtBottom) {
+                currentSection = sections[sections.length - 1];
+                console.log('At bottom, setting to last section');
+            }
+
             setActiveSection(currentSection);
-            console.log(`Active section: ${currentSection}`);
+            console.log(`Final active section: ${currentSection}`);
         };
 
-        scrollContainer.addEventListener('scroll', handleScroll);
+        // Debounce scroll events for better performance
+        let timeoutId: NodeJS.Timeout;
+        const debouncedHandleScroll = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(handleScroll, 10);
+        };
+
+        scrollContainer.addEventListener('scroll', debouncedHandleScroll);
         console.log('Scroll listener added to .homepage');
-        handleScroll(); // Call on mount to set initial active section
+
+        // Call on mount to set initial active section
+        handleScroll();
+
         return () => {
+            clearTimeout(timeoutId);
             console.log('Scroll listener removed from .homepage');
-            scrollContainer.removeEventListener('scroll', handleScroll);
+            scrollContainer.removeEventListener('scroll', debouncedHandleScroll);
         };
     }, [sections]);
+
+    const handleSectionClick = (section: string) => {
+        setActiveSection(section);
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
 
     return (
         <div className="section-sidebar">
@@ -58,11 +104,7 @@ const SectionSidebar: React.FC = () => {
                             className={activeSection === section ? 'active' : ''}
                             onClick={(e) => {
                                 e.preventDefault();
-                                setActiveSection(section);
-                                const element = document.getElementById(section);
-                                if (element) {
-                                    element.scrollIntoView({ behavior: 'smooth' });
-                                }
+                                handleSectionClick(section);
                             }}
                         >
                             {t(`sidebar.${section}`)}
@@ -73,7 +115,7 @@ const SectionSidebar: React.FC = () => {
             <div
                 className="sidebar-line"
                 style={{
-                    top: `calc(1.25rem * ${sections.indexOf(activeSection)} + 0.5rem)`,
+                    top: `calc(${sections.indexOf(activeSection)} * (1.25rem + 1.25rem) + 0.6rem)`,
                 }}
             />
         </div>
