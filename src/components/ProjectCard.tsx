@@ -79,28 +79,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <h3 className="project-title">{project.title}</h3>
                 <div className="project-details">
                     <p className="project-description">{project.description}</p>
-                </div>
-                <div className="project-footer">
-                    <div className="tech-stack">
-                        {project.techStack.map((tech, index) => (
-                            <span key={index} className="tech-item">
-                                {tech}
-                            </span>
-                        ))}
-                    </div>
-                    <div className="project-links">
-                        {project.links.map((link, index) => (
-                            <a
-                                key={index}
-                                href={link.url}
-                                className="link-item"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                aria-label={`${project.title} ${link.type} link`}
-                            >
-                                {renderLinkIcon(link.type)}
-                            </a>
-                        ))}
+                    <div className="project-footer">
+                        <div className="tech-stack">
+                            {project.techStack.map((tech, index) => (
+                                <span key={index} className="tech-item">
+                                    {tech}
+                                </span>
+                            ))}
+                        </div>
+                        <div className="project-links">
+                            {project.links.map((link, index) => (
+                                <a
+                                    key={index}
+                                    href={link.url}
+                                    className="link-item"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    aria-label={`${project.title} ${link.type} link`}
+                                >
+                                    {renderLinkIcon(link.type)}
+                                </a>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
