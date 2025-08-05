@@ -6,7 +6,8 @@
     },
     "sidebar": {
         "intro": "Johdanto",
-        "about": "Tietoa minusta"
+        "about": "Tietoa minusta",
+        "projects": "Projektit"
     },
     "intro": {
         "greeting": "Hei, olen",

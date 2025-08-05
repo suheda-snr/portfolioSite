@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 const SectionSidebar: React.FC = () => {
     const [activeSection, setActiveSection] = useState('intro');
     const { t } = useTranslation();
-    const sections = [t('sidebar.intro'), t('sidebar.about')];
+    const sections = ['intro', 'about', 'projects'];
 
     useEffect(() => {
         const scrollContainer = document.querySelector('.homepage');
@@ -57,7 +57,7 @@ const SectionSidebar: React.FC = () => {
                             aria-label={`Go to ${section} section`}
                             className={activeSection === section ? 'active' : ''}
                             onClick={(e) => {
-                                e.preventDefault(); // Prevent default anchor behavior
+                                e.preventDefault();
                                 setActiveSection(section);
                                 const element = document.getElementById(section);
                                 if (element) {
@@ -65,7 +65,7 @@ const SectionSidebar: React.FC = () => {
                                 }
                             }}
                         >
-                            {section.charAt(0).toUpperCase() + section.slice(1)}
+                            {t(`sidebar.${section}`)}
                         </a>
                     </li>
                 ))}

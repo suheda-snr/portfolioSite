@@ -6,7 +6,8 @@
     },
     "sidebar": {
         "intro": "Intro",
-        "about": "About Me"
+        "about": "About Me",
+        "projects": "Projects"
     },
     "intro": {
         "greeting": "Hi, my name is",
@@ -39,9 +40,9 @@
     },
     "projects": {
         "featured": {
-            "label": "Featured Project",
-            "title": "Halcyon Theme",
-            "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm."
+            "label": "Web Application",
+            "title": "Tastopia",
+            "description": "A community-driven recipe platform where users can browse diverse recipes, rate them, share their own, and leave suggestions for improvement by registering. Developed with the motto “Cook. Share. Inspire.”"
         },
         "featuredSection": "Featured Projects",
         "seeAll": "See All"

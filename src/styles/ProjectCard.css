@@ -20,9 +20,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 42, 68, 0.6);
+    background-color: rgba(30, 42, 68, 0.5);
     z-index: 1;
     border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.project-image:hover::before {
+    background-color: transparent;
 }
 
 .project-img {
@@ -39,46 +44,56 @@
 
 .project-content {
     color: #d3d3d3;
-    max-width: 55%;
+    max-width: 65%;
     width: 100%;
     padding: 1rem;
     position: absolute;
-    top: 60%;
-    left: 65%;
+    top: 55%;
+    left: 70%;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
 .featured-label {
     color: #fff;
-    padding: 0.3rem 0.6rem;
+    padding: 0rem 0.9rem;
     font-size: 0.9rem;
-    font-weight: 600;
     font-family: 'Emitha', 'Arial', sans-serif;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
     text-align: right;
+    display: block;
+    text-transform: uppercase;
 }
 
 .project-title {
     text-align: right;
+    padding: 0rem 0.9rem;
     font-size: 1.2rem;
     font-weight: 700;
     color: #ffffff;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-family: 'Emitha', 'Arial', sans-serif;
 }
 
 .project-details {
-    background-color: rgba(30, 42, 68, 0.95);
-    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 1.1rem;
+    padding-bottom: 0.4rem !important;
     border-radius: 8px;
     position: relative;
 }
 
 .project-description {
     font-size: 1.1rem;
-    line-height: 1.5;
-    color: #a8a8a8;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.5rem;
 }
 
 .tech-stack {
@@ -86,37 +101,35 @@
     justify-content: flex-end;
     gap: 0.8rem;
     flex-wrap: wrap;
-    margin-top: 0.5rem;
 }
 
 .tech-item {
-    color: #fff;
-    padding: 0.2rem 0.7rem;
-    border-radius: 10px;
+    color: #d3d3d3;
     font-size: 0.9rem;
     font-weight: 500;
 }
 
 .project-links {
-    display: block;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex;
+    padding-right: 1rem;
+    z-index: 1000;
 }
 
 .link-item {
     color: #00BFFF;
     text-decoration: none;
-    font-size: 1rem;
     transition: color 0.3s ease;
+    margin-top: -10px;
+    margin-left: 10px;
 }
 
 .link-item:hover {
-    color: #00aaff;
-    text-decoration: underline;
+    transform: scale(1.1);
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
-    .featured-project-card {
+    .project-card {
         flex-direction: column;
         text-align: center;
     }
