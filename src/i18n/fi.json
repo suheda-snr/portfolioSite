@@ -13,7 +13,7 @@
         "greeting": "Hei, olen",
         "name": "Suheda Sener",
         "paragraphs": [
-            "Rakastan tehdä asioita, jotka auttavat arkea – erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
+            "Rakastan tehdä asioita, jotka auttavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
             "Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
         ]
     },
@@ -25,7 +25,7 @@
         "title": "Tietoa minusta",
         "description": "Hei, olen Suheda, utelias kehittäjä ja opiskelija, joka rakastaa rakentaa asioita, jotka alkavat yksinkertaisista ajatuksista ja päätyvät hyödyllisiksi digitaalisiksi työkaluiksi, jotka helpottavat elämää.",
         "story": "Kiinnostukseni koodaamiseen alkoi, kun vaihdoin metallurgiainsinöörin opinnoista IT-alalle ja huomasin voivani viettää tunteja ongelmia ratkoen ja työkaluja rakentaen ilman, että aika tuntui kuluvan. Siitä lähtien olen kulkenut oppimisen, rakentamisen ja kasvun polkua ohjelmistokehityksen maailmassa.",
-        "experience": "Opiskelen parhaillani tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack -projekteissa osana opintojani ja omaa kiinnostustani.",
+        "experience": "Opiskelen parhaillaan tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack -projekteissa osana opintojani ja omaa kiinnostustani.",
         "techIntro": "Teknologiat, joiden parissa olen viime aikoina työskennellyt, ovat:",
         "techList": [
             "JavaScript (ES6+)",
@@ -36,6 +36,54 @@
             "Express.js",
             "Docker",
             "Java"
+        ]
+    },
+    "projects": {
+        "sectionTitle": "Projektit",
+        "seeAll": "Näytä kaikki",
+        "projectList": [
+            {
+                "id": "tastopia",
+                "label": "Verkkosovellus",
+                "title": "Tastopia",
+                "description": "Yhteisölähtöinen reseptialusta, jossa käyttäjät voivat selata monipuolisia reseptejä, arvostella niitä, jakaa omiaan ja jättää parannusehdotuksia rekisteröitymällä. Kehitetty motolla \"Kokki. Jaa. Inspiroi.\"",
+                "techStack": [
+                    "Node.js",
+                    "HTML 5",
+                    "CSS",
+                    "Figma"
+                ],
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/tastopia"
+                    }
+                ],
+                "image": "tastopia"
+            },
+            {
+                "id": "portfolio",
+                "label": "Portfolio-sivusto",
+                "title": "Henkilökohtainen Portfolio",
+                "description": "Responsiivinen portfolio-sivusto, joka esittelee projektejani ja taitojani. Rakennettu modernien web-teknologioiden avulla, sisältää sujuvia animaatioita, tumman teeman ja monikielituen.",
+                "techStack": [
+                    "React",
+                    "TypeScript",
+                    "CSS3",
+                    "i18next"
+                ],
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/portfolio"
+                    },
+                    {
+                        "type": "live",
+                        "url": "https://suhedasener.dev"
+                    }
+                ],
+                "image": "portfolio"
+            }
         ]
     }
 }

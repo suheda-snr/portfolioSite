@@ -1,7 +1,7 @@
 .projects-wrapper {
     padding-left: 8rem;
     color: #fff;
-    min-height: 80vh;
+    min-height: 200vh;
     font-family: 'Arial', sans-serif;
 }
 
@@ -10,7 +10,7 @@
     font-weight: 700;
     color: #ffffff;
     font-family: 'Emitha', 'Arial', sans-serif;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     position: relative;
     padding-left: 3rem;
 }
@@ -29,7 +29,7 @@
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1rem;
     width: 100%;
 }
 

@@ -24,7 +24,7 @@
     "about": {
         "title": "About Me",
         "description": "Hi, I'm Suheda, a curious developer and student who loves building things that start as simple thoughts and end up as useful digital tools that make life easier.",
-        "story": "My interest in coding began when I switched from Metallurgical Engineering to IT and realized I could spend hours solving problems and building tools without noticing time pass. Since then, I’ve been on a journey to learn, build, and grow in the world of software development.",
+        "story": "My interest in coding began when I switched from Metallurgical Engineering to IT and realized I could spend hours solving problems and building tools without noticing time pass. Since then, I've been on a journey to learn, build, and grow in the world of software development.",
         "experience": "I am currently studying Information Technology at Oulu University of Applied Sciences. During my studies, I took part in a cross-university Erasmus+ project in the Netherlands. Throughout my education, I have worked on several full-stack projects as part of coursework and personal interest.",
         "techIntro": "Technologies I've been working with recently include:",
         "techList": [
@@ -39,12 +39,51 @@
         ]
     },
     "projects": {
-        "featured": {
-            "label": "Web Application",
-            "title": "Tastopia",
-            "description": "A community-driven recipe platform where users can browse diverse recipes, rate them, share their own, and leave suggestions for improvement by registering. Developed with the motto “Cook. Share. Inspire.”"
-        },
-        "featuredSection": "Featured Projects",
-        "seeAll": "See All"
+        "sectionTitle": "Projects",
+        "seeAll": "See All",
+        "projectList": [
+            {
+                "id": "tastopia",
+                "label": "Recipe Sharing Web Application",
+                "title": "Tastopia",
+                "description": "A community-driven recipe platform where users can browse diverse recipes, rate them, share their own, and leave suggestions for improvement by registering. Developed with the motto \"Cook. Share. Inspire.\"",
+                "techStack": [
+                    "Node.js",
+                    "HTML 5",
+                    "CSS",
+                    "Figma"
+                ],
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/tastopia"
+                    }
+                ],
+                "image": "tastopia"
+            },
+            {
+                "id": "portfolio",
+                "label": "Portfolio Website",
+                "title": "Personal Portfolio",
+                "description": "A responsive portfolio website showcasing my projects and skills. Built with modern web technologies and featuring smooth animations, dark theme, and multi-language support.",
+                "techStack": [
+                    "React",
+                    "TypeScript",
+                    "CSS3",
+                    "i18next"
+                ],
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/portfolio"
+                    },
+                    {
+                        "type": "live",
+                        "url": "https://suhedasener.dev"
+                    }
+                ],
+                "image": "portfolio"
+            }
+        ]
     }
 }
