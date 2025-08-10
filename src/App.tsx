@@ -4,6 +4,7 @@ import './App.css';
 
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';
 import FloatingContactBar from './components/FloatingContactBar';
 import SectionSidebar from './components/SectionSidebar';
 
@@ -13,11 +14,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <SectionSidebar />
+        {window.location.pathname === '/' && <SectionSidebar />}
         <FloatingContactBar />
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
           </Routes>
         </Layout>
       </Router>

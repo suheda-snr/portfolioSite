@@ -33,22 +33,26 @@
 }
 
 .see-all-btn {
-    background-color: #00BFFF;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
     color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
-    border-radius: 20px;
+    border-radius: 16px;
     font-size: 1rem;
     cursor: pointer;
-    margin-top: 2rem;
-    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 .see-all-btn:hover {
-    background-color: #00aaff;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 /* Tablet breakpoint */

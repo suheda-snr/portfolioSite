@@ -18,7 +18,12 @@ const ProjectsSection: React.FC = () => {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
-                <button className="see-all-btn">{t('projects.seeAll')}</button>
+                <button
+                    className="see-all-btn"
+                    onClick={() => window.location.href = '/projects'}
+                >
+                    {t('projects.seeAll')}
+                </button>
             </div>
         </div>
     );

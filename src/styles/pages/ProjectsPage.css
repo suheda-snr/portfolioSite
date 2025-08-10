@@ -1,0 +1,41 @@
+.projects-page-wrapper {
+    padding: 4rem 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.projects-page-section {
+    max-width: 1200px;
+}
+
+.projects-page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: left;
+    color: white;
+    font-family: 'Emitha', 'Arial', sans-serif;
+}
+
+.projects-page-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+/* Two per row on medium+ */
+@media (min-width: 768px) {
+    .projects-page-grid {
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    }
+}
+
+/* Padding adjustments for smaller devices */
+@media (max-width: 768px) {
+    .projects-page-wrapper {
+        padding: 2rem 1rem;
+    }
+
+    .projects-page-title {
+        font-size: 1.6rem;
+    }
+}
