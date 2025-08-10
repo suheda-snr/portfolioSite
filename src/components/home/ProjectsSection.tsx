@@ -14,7 +14,7 @@ const ProjectsSection: React.FC = () => {
             <div className="container projects-section px-md-5">
                 <h2 className="section-title">{t('projects.sectionTitle')}</h2>
                 <div className="projects-grid">
-                    {projects.map((project) => (
+                    {projects.slice(0, 3).map((project) => (
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
