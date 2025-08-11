@@ -5,6 +5,7 @@ import './App.css';
 import Layout from './components/Layout';
 import HomePage from './pages/HomePage';
 import ProjectsPage from './pages/ProjectsPage';
+import ProjectDetailsPage from './pages/ProjectDetailsPage';
 import FloatingContactBar from './components/FloatingContactBar';
 import SectionSidebar from './components/SectionSidebar';
 
@@ -20,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:id" element={<ProjectDetailsPage />} />
           </Routes>
         </Layout>
       </Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/ProjectCard.css';
+import { Link } from 'react-router-dom';
 
 export interface ProjectLink {
     type: 'github' | 'live' | 'demo';
@@ -58,53 +59,55 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     const imageSrc = getImageSrc(project.image);
 
     return (
-        <div className="project-card">
-            <div className="image-wrapper">
-                <div className="project-image">
-                    {imageSrc ? (
-                        <img
-                            src={imageSrc}
-                            alt={`${project.title} Thumbnail`}
-                            className="project-img"
-                        />
-                    ) : (
-                        <div className="project-img-placeholder">
-                            <span>No Image</span>
-                        </div>
-                    )}
+        <Link to={`/projects/${project.id}`} className="project-card-link">
+            <div className="project-card">
+                <div className="image-wrapper">
+                    <div className="project-image">
+                        {imageSrc ? (
+                            <img
+                                src={imageSrc}
+                                alt={`${project.title} Thumbnail`}
+                                className="project-img"
+                            />
+                        ) : (
+                            <div className="project-img-placeholder">
+                                <span>No Image</span>
+                            </div>
+                        )}
+                    </div>
                 </div>
-            </div>
-            <div className="project-content">
-                <span className="project-label">{project.label}</span>
-                <h3 className="project-title">{project.title}</h3>
-                <div className="project-details">
-                    <p className="project-description">{project.description}</p>
-                    <div className="project-footer">
-                        <div className="tech-stack">
-                            {project.techStack.map((tech, index) => (
-                                <span key={index} className="tech-item">
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                        <div className="project-links">
-                            {project.links.map((link, index) => (
-                                <a
-                                    key={index}
-                                    href={link.url}
-                                    className="link-item"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    aria-label={`${project.title} ${link.type} link`}
-                                >
-                                    {renderLinkIcon(link.type)}
-                                </a>
-                            ))}
+                <div className="project-content">
+                    <span className="project-label">{project.label}</span>
+                    <h3 className="project-title">{project.title}</h3>
+                    <div className="project-details">
+                        <p className="project-description">{project.description}</p>
+                        <div className="project-footer">
+                            <div className="tech-stack">
+                                {project.techStack.map((tech, index) => (
+                                    <span key={index} className="tech-item">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
+                            <div className="project-links">
+                                {project.links.map((link, index) => (
+                                    <a
+                                        key={index}
+                                        href={link.url}
+                                        className="link-item"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`${project.title} ${link.type} link`}
+                                    >
+                                        {renderLinkIcon(link.type)}
+                                    </a>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

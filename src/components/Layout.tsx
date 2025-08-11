@@ -37,7 +37,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                                 <Link className="nav-link" to="/">{t('nav.home')}</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="/projects">{t('nav.projects')}</a>
+                                <Link className="nav-link" to="/projects">{t('nav.projects')}</Link>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#blogs">{t('nav.skills')}</a>
