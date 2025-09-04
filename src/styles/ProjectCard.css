@@ -4,7 +4,7 @@
     overflow: hidden;
     position: relative;
     min-height: 250px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project-image {
@@ -122,26 +122,15 @@
     color: #d3d3d3;
     font-size: 0.9rem;
     font-weight: 500;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2rem 0.5rem;
+    border-radius: 12px;
 }
 
-.project-links {
-    display: flex;
-    padding-right: 1rem;
-    z-index: 1000;
+a {
+    text-decoration: none !important;
 }
 
-.link-item {
-    color: #00BFFF;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    margin-top: -10px;
-    margin-left: 10px;
-}
-
-.link-item:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
-}
 
 /* Tablet breakpoint */
 @media (max-width: 1024px) {
@@ -240,30 +229,7 @@
 
     .tech-item {
         font-size: 0.85rem;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 0.2rem 0.5rem;
         border-radius: 12px;
-    }
-
-    .project-links {
-        justify-content: center;
-        padding-right: 0;
-        order: 1;
-    }
-
-    .link-item {
-        margin-top: 0;
-        margin-left: 0.5rem;
-        padding: 0.5rem;
-        border-radius: 50%;
-        background: rgba(0, 191, 255, 0.1);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .link-item:hover {
-        background: rgba(0, 191, 255, 0.2);
     }
 }
 

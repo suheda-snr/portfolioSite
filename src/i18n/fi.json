@@ -2,7 +2,7 @@
     "nav": {
         "home": "Etusivu",
         "projects": "Projektit",
-        "skills": "Taidot"
+        "blogs": "Blogit"
     },
     "sidebar": {
         "intro": "Johdanto",
@@ -13,7 +13,7 @@
         "greeting": "Hei, olen",
         "name": "Suheda Sener",
         "paragraphs": [
-            "Rakastan tehdä asioita, jotka auttavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
+            "Rakastan tehdä asioita, jotka helpottavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
             "Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
         ]
     },
@@ -25,7 +25,7 @@
         "title": "Tietoa minusta",
         "description": "Hei, olen Suheda, utelias kehittäjä ja opiskelija, joka rakastaa rakentaa asioita, jotka alkavat yksinkertaisista ajatuksista ja päätyvät hyödyllisiksi digitaalisiksi työkaluiksi, jotka helpottavat elämää.",
         "story": "Kiinnostukseni koodaamiseen alkoi, kun vaihdoin metallurgiainsinöörin opinnoista IT-alalle ja huomasin voivani viettää tunteja ongelmia ratkoen ja työkaluja rakentaen ilman, että aika tuntui kuluvan. Siitä lähtien olen kulkenut oppimisen, rakentamisen ja kasvun polkua ohjelmistokehityksen maailmassa.",
-        "experience": "Opiskelen parhaillaan tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack -projekteissa osana opintojani ja omaa kiinnostustani.",
+        "experience": "Opiskelen parhaillaan tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack-projekteissa osana opintojani ja omaa kiinnostustani.",
         "techIntro": "Teknologiat, joiden parissa olen viime aikoina työskennellyt, ovat:",
         "techList": [
             "JavaScript (ES6+)",
@@ -43,47 +43,253 @@
         "seeAll": "Näytä kaikki",
         "projectList": [
             {
-                "id": "tastopia",
-                "label": "Verkkosovellus",
-                "title": "Tastopia",
-                "description": "Yhteisölähtöinen reseptialusta, jossa käyttäjät voivat selata monipuolisia reseptejä, arvostella niitä, jakaa omiaan ja jättää parannusehdotuksia rekisteröitymällä. Kehitetty motolla \"Kokki. Jaa. Inspiroi.\"",
-                "techStack": [
-                    "Node.js",
-                    "HTML 5",
-                    "CSS",
-                    "Figma"
+                "id": "nordflix",
+                "label": "Edistynyt verkkosovellus",
+                "title": "NordFlix-elokuvasovellus",
+                "description": "Full-stack-verkkosovellus elokuvien ja TV-ohjelmien selaamiseen, arvostelujen kirjoittamiseen, suosikkien tallentamiseen ja kiinnostuksen kohteisiin perustuvien ryhmien liittymiseen. Integroituu TMDb-API:n kanssa maailmanlaajuisten elokuva- ja TV-tietojen hakemiseksi sekä Finnkino-API:n kanssa Suomen elokuvateatterien aikataulujen näyttämiseksi.",
+                "details": {
+                    "overview": "NordFlix on full-stack-verkkosovellus elokuvien ja TV-ohjelmien selaamiseen, arvostelujen kirjoittamiseen, suosikkien tallentamiseen ja kiinnostuksen kohteisiin perustuvien ryhmien liittymiseen. Se integroituu TMDb-API:n kanssa maailmanlaajuisten elokuva- ja TV-tietojen hakemiseksi sekä Finnkino-API:n kanssa Suomen elokuvateatterien aikataulujen näyttämiseksi.",
+                    "features": [
+                        "Selaa elokuvia ja TV-ohjelmia yksityiskohtaisilla tiedoilla",
+                        "Kirjoita ja lue arvosteluja",
+                        "Tallenna suosikkeja nopeaa käyttöä varten",
+                        "Liity kiinnostuksen kohteisiin perustuviin ryhmiin ja ole vuorovaikutuksessa niissä",
+                        "Reaaliaikaiset näytösajat Suomessa Finnkino-API:sta"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "React",
+                        "Express",
+                        "Node.js",
+                        "PostgreSQL",
+                        "Mocha",
+                        "Azure",
+                        "Render",
+                        "Postman"
+                    ],
+                    "challenges": [
+                        "Reaaliaikainen dataintegraatio: Toteutettiin API-haku ja välimuisti suorituskyvyn optimoimiseksi.",
+                        "Testaus: Automaattiset testit Mochalla luotettavuuden varmistamiseksi.",
+                        "Skaalautuva isännöinti: Backend käyttöönotettu Azurella ja frontend Renderillä."
+                    ],
+                    "role": [
+                        "Kehitin full-stack-ominaisuuksia (frontend-käyttöliittymä ja backend-rajapinnat)",
+                        "Integroin TMDb- ja Finnkino-API:t",
+                        "Kirjoitin automaattisia Mocha-testejä",
+                        "Hallinnoin käyttöönottoa ja suorituskyvyn optimointia"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/nordflix"
+                    }
                 ],
+                "image": "nordflix"
+            },
+            {
+                "id": "tastopia",
+                "label": "Reseptien jakosovellus",
+                "title": "Tastopia",
+                "description": "Yhteisölähtöinen reseptialusta, jossa käyttäjät voivat jakaa, etsiä ja arvostella reseptejä intuitiivisella ja yhteisökeskeisellä käyttöliittymällä.",
+                "details": {
+                    "overview": "Tastopia on reseptienjakosovellus, joka kehitettiin ensimmäisenä verkkokehityskouluprojektinani 6 viikon aikana 4 hengen tiimissä. Sovellus yhdistää ruoan ystäviä reseptien jakamisen, etsimisen ja arvostelun kautta. Projekti sai arvosanan 5/5 ja sai palautetta siitä, että se oli edistyneempi kuin useimmat muut luokkatoverien projektit vankan ominaisuusvalikoimansa ja viimeistellyn käyttöliittymänsä ansiosta.",
+                    "features": [
+                        "Jaa omia reseptejä kuvauksilla ja kuvilla",
+                        "Hallitse jaettuja reseptejä (näytä/poista)",
+                        "Etsi reseptejä avainsanoilla tai kategorioilla",
+                        "Arvostele ja kommentoi muiden käyttäjien reseptejä",
+                        "Reseptiehdotuksia etusivulla",
+                        "Käyttäjäautentikointi JWT:llä (rekisteröityminen/kirjautuminen)",
+                        "Responsiivinen käyttöliittymä mobiili- ja työpöytäkäyttöön"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "Bootstrap",
+                        "JavaScript",
+                        "Node.js",
+                        "Express",
+                        "PostgreSQL",
+                        "Sequelize",
+                        "Scrum"
+                    ],
+                    "challenges": [
+                        "JWT-pohjaisen autentikoinnin toteuttaminen: Integroitiin JWT Express-väliohjelmistoon tokenien validoimiseksi, varmistaen, että vain rekisteröityneet käyttäjät voivat jakaa, arvostella tai kommentoida reseptejä.",
+                        "Responsiivisen käyttöliittymän kehittäminen: Käytettiin Bootstrapin ruudukkojärjestelmää ja mukautettuja CSS-mediatiedostoja luomaan saumaton kokemus mobiili- ja työpöytälaitteilla.",
+                        "Tiimiyhteistyö: Otettiin käyttöön Scrum-menetelmä päivittäisillä standup-kokouksilla ja HackNPlan-tehtävienhallinnalla, mikä mahdollisti tehokkaan viestinnän ja tehtävien jaon 4 hengen tiimissä."
+                    ],
+                    "role": [
+                        "Osallistuin tietokantaskeeman suunnitteluun PostgreSQL:llä ja Sequelize:llä",
+                        "Toteutin backend-rajapintoja Expressillä ominaisuuksiin, kuten reseptihaku ja käyttäjäautentikointi",
+                        "Rakensin keskeisiä frontend-sivuja, mukaan lukien etusivu, reseptitiedot ja hakutulokset, käyttäen HTML:ää, CSS:ää ja Bootstrapia"
+                    ]
+                },
                 "links": [
                     {
                         "type": "github",
                         "url": "https://github.com/suheda-snr/tastopia"
                     }
                 ],
-                "image": "tastopia"
+                "image": "tastopia",
+                "image2": "tastopia2"
+            },
+            {
+                "id": "duunitori",
+                "label": "Verkkokaavinta-automaatio",
+                "title": "Duunitori-työpaikkakaavinta",
+                "description": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
+                "details": {
+                    "overview": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
+                    "features": [
+                        "Pura työpaikan nimi, yritys ja tiedot HTML:stä",
+                        "Vie tiedot JSON-muodossa",
+                        "Automatisoidaan Windows Task Schedulerilla"
+                    ],
+                    "techStack": [
+                        "Puppeteer",
+                        "Node.js",
+                        "JavaScript"
+                    ],
+                    "challenges": [
+                        "Muuttuvan HTML-rakenteen käsittely: Käytettiin robusteja valitsimia ja varalogiikkaa.",
+                        "Automatisoitu päivittäinen suoritus Windows Task Schedulerilla."
+                    ],
+                    "role": [
+                        "Kirjoitin Puppeteer-kaavintaskriptejä",
+                        "Toteutin tietojen jäsentämisen ja JSON-viennin",
+                        "Määritin automaation"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/duunitori-job-scraper"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
+                    }
+                ],
+                "image": "duunitori"
+            },
+            {
+                "id": "xit-project",
+                "label": "IT-projekti",
+                "title": "X IT -projekti",
+                "description": "Lyhyt kuvaus siitä, mitä projekti tekee ja sen tarkoitus.",
+                "details": {
+                    "overview": "Lyhyt 2–3 rivin kuvaus projektista ja sen tarkoituksesta.",
+                    "features": [
+                        "Tärkeimmät toiminnot luettelopisteissä"
+                    ],
+                    "techStack": [
+                        "React",
+                        "Node.js",
+                        "PostgreSQL"
+                    ],
+                    "challenges": [
+                        "Lyhyt osio, joka kuvaa ainakin yhtä teknistä haastetta ja sen ratkaisua."
+                    ],
+                    "role": [
+                        "Oma panokseni projektiin."
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/xit-project"
+                    }
+                ],
+                "image": "xit"
             },
             {
                 "id": "portfolio",
                 "label": "Portfolio-sivusto",
                 "title": "Henkilökohtainen Portfolio",
-                "description": "Responsiivinen portfolio-sivusto, joka esittelee projektejani ja taitojani. Rakennettu modernien web-teknologioiden avulla, sisältää sujuvia animaatioita, tumman teeman ja monikielituen.",
-                "techStack": [
-                    "React",
-                    "TypeScript",
-                    "CSS3",
-                    "i18next"
-                ],
+                "description": "Responsiivinen portfolio-sivusto, joka esittelee projektejani ja taitojani monikielituella ja animaatioilla.",
+                "details": {
+                    "overview": "Henkilökohtainen portfolio, joka esittelee projektejani, taitojani ja kokemustani.",
+                    "features": [
+                        "Responsiivinen suunnittelu",
+                        "Monikielinen tuki (englanti/suomi)",
+                        "Interaktiivinen käyttöliittymä animaatioilla"
+                    ],
+                    "techStack": [
+                        "React",
+                        "TypeScript",
+                        "CSS",
+                        "i18next",
+                        "Netlify",
+                        "Vite"
+                    ],
+                    "challenges": [
+                        "Kielenvaihdon toteuttaminen i18next:llä",
+                        "Responsiivisten asettelujen suunnittelu kaikille laitteille"
+                    ],
+                    "role": [
+                        "Suunnittelin ja rakensin koko sivuston alusta alkaen"
+                    ]
+                },
                 "links": [
                     {
                         "type": "github",
-                        "url": "https://github.com/suheda-snr/portfolio"
+                        "url": "https://github.com/suheda-snr/portfolioSite"
                     },
                     {
                         "type": "live",
-                        "url": "https://suhedasener.dev"
+                        "url": "https://suhedasener.netlify.app/"
                     }
                 ],
                 "image": "portfolio"
+            },
+            {
+                "id": "twilio-motivation",
+                "label": "Automaatiotyökalu",
+                "title": "Automatisoitu motivaatiojärjestelmä",
+                "description": "Node.js-pohjainen automaatiotyökalu, joka lähettää päivittäisiä motivoivia viestejä SMS:n kautta Twilio API:n avulla.",
+                "details": {
+                    "overview": "Node.js-pohjainen automaatiotyökalu, joka lähettää päivittäisiä motivoivia viestejä SMS:n kautta Twilio API:n avulla.",
+                    "features": [
+                        "Ajastettu SMS-lähetys",
+                        "Satunnaistetut päivittäiset lainaukset",
+                        "Muokattava vastaanottajalista"
+                    ],
+                    "techStack": [
+                        "Node.js",
+                        "Twilio API",
+                        "JavaScript",
+                        "Cron-työt"
+                    ],
+                    "challenges": [
+                        "Ajastuksen toteuttaminen Node-cronilla",
+                        "Twilio API:n nopeusrajoitusten käsittely"
+                    ],
+                    "role": [
+                        "Integroin Twilio API:n",
+                        "Rakensin ajastus- ja viestin satunnaistamislogiikan"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/twilio-motivation"
+                    }
+                ],
+                "image": "twilio"
             }
-        ]
+        ],
+        "projectDetailsTitles": {
+            "overview": "Yleiskatsaus",
+            "features": "Pääominaisuudet",
+            "techStack": "Teknologia",
+            "challenges": "Haasteet ja Ratkaisut",
+            "role": "Roolini",
+            "links": "Linkit"
+        }
     }
 }

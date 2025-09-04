@@ -40,7 +40,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                                 <Link className="nav-link" to="/projects">{t('nav.projects')}</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#blogs">{t('nav.skills')}</a>
+                                <Link className="nav-link" to="/blogs">{t('nav.blogs')}</Link>
                             </li>
                             <li className="nav-item">
                                 <button onClick={toggleLanguage} className="language-toggle-button nav-link">

@@ -1,0 +1,160 @@
+.project-details-wrapper {
+    padding: 4rem 0;
+    font-family: "Arial", sans-serif;
+    color: #fff;
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 6px;
+}
+
+.hero-label {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    padding: 0.3rem 0.7rem;
+    margin-top: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.hero-img {
+    max-width: 80%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(0.6);
+    display: block;
+    border-radius: 10px;
+}
+
+/* Sections */
+.project-section {
+    margin: 3rem auto;
+    max-width: 1100px;
+}
+
+.project-section h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #00bfff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.project-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.features-list,
+.challenges-list,
+.role-list {
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li,
+.challenges-list li,
+.role-list li {
+    padding-left: 1.2rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.features-list li::before,
+.challenges-list li::before,
+.role-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #00bfff;
+    font-size: 1.1rem;
+}
+
+/* Tech Stack */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.badge {
+    background: rgba(0, 191, 255, 0.15);
+    border: 1px solid #00bfff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+/* Links */
+.project-links-section {
+    text-align: center;
+}
+
+.project-btn {
+    display: inline-block;
+    background: #00bfff;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Back Button */
+.back-to-projects {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.back-btn {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-btn:hover {
+    text-decoration: underline;
+}
+
+/* Padding adjustments for smaller devices */
+@media (max-width: 768px) {
+    .project-details-wrapper {
+        padding: 2rem 1rem;
+    }
+}

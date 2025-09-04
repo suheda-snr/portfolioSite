@@ -2,7 +2,7 @@
     "nav": {
         "home": "Home",
         "projects": "Projects",
-        "skills": "Skills"
+        "blogs": "Blogs"
     },
     "sidebar": {
         "intro": "Intro",
@@ -43,47 +43,253 @@
         "seeAll": "See All",
         "projectList": [
             {
+                "id": "nordflix",
+                "label": "Advanced Web Application",
+                "title": "NordFlix Movie App",
+                "description": "A full-stack web application for browsing movies and TV shows, writing reviews, saving favorites, and joining interest-based groups. Integrates with TMDb API for global movie/TV data and Finnkino API for Finland cinema schedules.",
+                "details": {
+                    "overview": "NordFlix is a full-stack web application for browsing movies and TV shows, writing reviews, saving favorites, and joining interest-based groups. It integrates with TMDb API for global movie/TV data and Finnkino API for Finland cinema schedules.",
+                    "features": [
+                        "Browse movies and TV shows with detailed info",
+                        "Write and read reviews",
+                        "Save favorites for quick access",
+                        "Join and interact in interest-based groups",
+                        "Real-time showtimes in Finland from Finnkino API"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "React",
+                        "Express",
+                        "Node.js",
+                        "PostgreSQL",
+                        "Mocha",
+                        "Azure",
+                        "Render",
+                        "Postman"
+                    ],
+                    "challenges": [
+                        "Real-time data integration: Implemented API fetch and caching for performance",
+                        "Testing: Automated tests with Mocha to ensure reliability",
+                        "Scalable hosting: Deployed backend on Azure and frontend on Render"
+                    ],
+                    "role": [
+                        "Developed full-stack features (frontend UI + backend APIs)",
+                        "Integrated TMDb and Finnkino APIs",
+                        "Wrote automated Mocha tests",
+                        "Managed deployment and performance optimization"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/nordflix"
+                    }
+                ],
+                "image": "nordflix"
+            },
+            {
                 "id": "tastopia",
                 "label": "Recipe Sharing Web Application",
                 "title": "Tastopia",
-                "description": "A community-driven recipe platform where users can browse diverse recipes, rate them, share their own, and leave suggestions for improvement by registering. Developed with the motto \"Cook. Share. Inspire.\"",
-                "techStack": [
-                    "Node.js",
-                    "HTML 5",
-                    "CSS",
-                    "Figma"
-                ],
+                "description": "A recipe-sharing platform where users can share, search, and rate recipes with an intuitive, community-focused design.",
+                "details": {
+                    "overview": "Tastopia is a recipe-sharing platform developed as my first web development school project over 6 weeks in a team of 4. It connects food enthusiasts through sharing, searching, and rating recipes. The project earned a grade of 5/5 and received feedback for being ahead of most peers due to its robust features and polished UI.",
+                    "features": [
+                        "Share custom recipes with descriptions and images",
+                        "Manage shared recipes (view/delete)",
+                        "Search recipes by keywords or categories",
+                        "Rate and review other users’ recipes",
+                        "Recipe suggestions on homepage",
+                        "User authentication with JWT (register/login)",
+                        "Responsive UI for mobile and desktop"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "Bootstrap",
+                        "JavaScript",
+                        "Node.js",
+                        "Express",
+                        "PostgreSQL",
+                        "Sequelize",
+                        "Scrum"
+                    ],
+                    "challenges": [
+                        "Implementing JWT-based authentication: Integrated JWT with Express middleware to validate tokens, ensuring only registered users could share, rate, or review recipes.",
+                        "Building a responsive UI: Utilized Bootstrap’s grid system and custom CSS media queries to create a seamless experience across mobile and desktop devices.",
+                        "Team collaboration: Adopted Scrum methodology with daily standups and HackNPlan for task management, enabling effective communication and task division among the 4-person team."
+                    ],
+                    "role": [
+                        "Contributed to designing the database schema using PostgreSQL and Sequelize",
+                        "Implemented backend APIs with Express for features like recipe search and user authentication",
+                        "Built major frontend pages, including the homepage, recipe details, and search results, using HTML, CSS, and Bootstrap"
+                    ]
+                },
                 "links": [
                     {
                         "type": "github",
                         "url": "https://github.com/suheda-snr/tastopia"
                     }
                 ],
-                "image": "tastopia"
+                "image": "tastopia",
+                "image2": "tastopia2"
+            },
+            {
+                "id": "duunitori",
+                "label": "Web Scraping Automation",
+                "title": "Duunitori Job Scraper",
+                "description": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
+                "details": {
+                    "overview": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
+                    "features": [
+                        "Extract job title, company, and details from HTML",
+                        "Output data in JSON format",
+                        "Automated via Windows Task Scheduler"
+                    ],
+                    "techStack": [
+                        "Puppeteer",
+                        "Node.js",
+                        "JavaScript"
+                    ],
+                    "challenges": [
+                        "Navigating changing HTML structure: Used robust selectors and fallback logic",
+                        "Automated daily execution via Task Scheduler"
+                    ],
+                    "role": [
+                        "Wrote Puppeteer scraping scripts",
+                        "Implemented data parsing and JSON export",
+                        "Configured automation"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/duunitori.fi-job-scraper"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
+                    }
+                ],
+                "image": "duunitori"
+            },
+            {
+                "id": "xit-project",
+                "label": "IT Project",
+                "title": "X IT Project",
+                "description": "Brief description of what the project does and its purpose.",
+                "details": {
+                    "overview": "Brief 2–3 lines describing the project and its purpose.",
+                    "features": [
+                        "Main functionalities in bullet points"
+                    ],
+                    "techStack": [
+                        "React",
+                        "Node.js",
+                        "PostgreSQL"
+                    ],
+                    "challenges": [
+                        "Short section describing at least one technical challenge and how you solved it."
+                    ],
+                    "role": [
+                        "What you personally contributed."
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/xit-project"
+                    }
+                ],
+                "image": "xit"
             },
             {
                 "id": "portfolio",
                 "label": "Portfolio Website",
                 "title": "Personal Portfolio",
-                "description": "A responsive portfolio website showcasing my projects and skills. Built with modern web technologies and featuring smooth animations, dark theme, and multi-language support.",
-                "techStack": [
-                    "React",
-                    "TypeScript",
-                    "CSS3",
-                    "i18next"
-                ],
+                "description": "A responsive portfolio website showcasing my projects and skills with multilingual support and animations.",
+                "details": {
+                    "overview": "A personal portfolio showcasing my projects, skills, and experience.",
+                    "features": [
+                        "Responsive design",
+                        "Multilingual (English/Finnish)",
+                        "Interactive UI with animations"
+                    ],
+                    "techStack": [
+                        "React",
+                        "TypeScript",
+                        "CSS",
+                        "i18next",
+                        "Netlify",
+                        "Vite"
+                    ],
+                    "challenges": [
+                        "Implemented language switching with i18next",
+                        "Designed responsive layouts for all devices"
+                    ],
+                    "role": [
+                        "Designed and built the entire site from scratch"
+                    ]
+                },
                 "links": [
                     {
                         "type": "github",
-                        "url": "https://github.com/suheda-snr/portfolio"
+                        "url": "https://github.com/suheda-snr/portfolioSite"
                     },
                     {
                         "type": "live",
-                        "url": "https://suhedasener.dev"
+                        "url": "https://suhedasener.netlify.app/"
                     }
                 ],
                 "image": "portfolio"
+            },
+            {
+                "id": "twilio-motivation",
+                "label": "Automation Tool",
+                "title": "Automated Motivation System",
+                "description": "A Node.js-based automation tool that sends daily motivational messages via SMS using the Twilio API.",
+                "details": {
+                    "overview": "A Node.js-based automation tool that sends daily motivational messages via SMS using the Twilio API.",
+                    "features": [
+                        "Scheduled SMS delivery",
+                        "Randomized daily quotes",
+                        "Configurable recipient list"
+                    ],
+                    "techStack": [
+                        "Node.js",
+                        "Twilio API",
+                        "JavaScript",
+                        "Cron jobs"
+                    ],
+                    "challenges": [
+                        "Implemented scheduling with Node-cron",
+                        "Handled Twilio API rate limits"
+                    ],
+                    "role": [
+                        "Integrated Twilio API",
+                        "Built scheduling and message randomization logic"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/twilio-motivation"
+                    }
+                ],
+                "image": "twilio"
             }
-        ]
+        ],
+        "projectDetailsTitles": {
+            "overview": "Overview",
+            "features": "Main Features",
+            "techStack": "Tech Stack",
+            "challenges": "Challenges & Solutions",
+            "role": "My Role",
+            "links": "Links"
+        }
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ProjectCard, { ProjectData } from '../ProjectCard';
 import '../../styles/home/ProjectsSection.css';
+import { Link } from 'react-router-dom';
 
 const ProjectsSection: React.FC = () => {
     const { t } = useTranslation();
@@ -18,12 +19,9 @@ const ProjectsSection: React.FC = () => {
                         <ProjectCard key={project.id} project={project} />
                     ))}
                 </div>
-                <button
-                    className="see-all-btn"
-                    onClick={() => window.location.href = '/projects'}
-                >
+                <Link to="/projects" className="see-all-btn">
                     {t('projects.seeAll')}
-                </button>
+                </Link>
             </div>
         </div>
     );
