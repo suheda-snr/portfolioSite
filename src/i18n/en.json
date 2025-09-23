@@ -344,6 +344,7 @@
                 "level": "80%"
             }
         ],
+        "otherSkillsTitle": "Other Skills",
         "otherSkills": [
             "Java",
             "Kotlin",

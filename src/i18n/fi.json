@@ -344,6 +344,7 @@
                 "level": "80%"
             }
         ],
+        "otherSkillsTitle": "Muut taidot",
         "otherSkills": [
             "Java",
             "Kotlin",
