@@ -4,6 +4,7 @@ import AboutSection from '../components/home/AboutSection';
 import ProjectsSection from '../components/home/ProjectsSection';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/pages/HomePage.css';
+import SkillsSection from '../components/home/SkillsSection';
 
 const HomePage: React.FC = () => {
     return (
@@ -16,6 +17,9 @@ const HomePage: React.FC = () => {
             </div>
             <div id="projects" className="section">
                 <ProjectsSection />
+            </div>
+            <div id="skills" className="section">
+                <SkillsSection />
             </div>
         </div>
     );

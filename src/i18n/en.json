@@ -7,7 +7,8 @@
     "sidebar": {
         "intro": "Intro",
         "about": "About Me",
-        "projects": "Projects"
+        "projects": "Projects",
+        "skills": "Skills"
     },
     "intro": {
         "greeting": "Hi, my name is",
@@ -310,5 +311,57 @@
             "role": "My Role",
             "links": "Links"
         }
+    },
+    "skills": {
+        "mainSkills": [
+            {
+                "name": "JavaScript",
+                "level": "90%"
+            },
+            {
+                "name": "TypeScript",
+                "level": "80%"
+            },
+            {
+                "name": "React",
+                "level": "85%"
+            },
+            {
+                "name": "Node.js",
+                "level": "85%"
+            },
+            {
+                "name": "HTML/CSS",
+                "level": "85%"
+            },
+            {
+                "name": "SQL",
+                "level": "80%"
+            }
+        ],
+        "otherSkills": [
+            "Java",
+            "Kotlin",
+            "Express",
+            "Figma",
+            "PostgreSQL",
+            "Express.js",
+            "MySQL",
+            "Database Design",
+            "API design",
+            "API testing and integration",
+            "Azure",
+            "Render",
+            "Cloudflare",
+            "GitHub",
+            "Puppeteer",
+            "Linux",
+            "Mocha",
+            "Automated Testing",
+            "Postman",
+            "Agile",
+            "Scrum",
+            "Microsoft Programs"
+        ]
     }
 }
