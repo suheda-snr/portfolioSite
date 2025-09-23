@@ -179,30 +179,49 @@
             },
             {
                 "id": "xit-project",
-                "label": "IT-projekti",
-                "title": "X IT -projekti",
-                "description": "Lyhyt kuvaus siitä, mitä projekti tekee ja sen tarkoitus.",
+                "label": "Mobiilisovellusprojekti",
+                "title": "X-it-projekti",
+                "description": "Integroitu pakohuonejärjestelmä, jossa on tablettipohjainen check-in-sovellus ja sosiaalinen mobiilisovellus, toteutettu React Nativella, Nest.js:llä, PostgreSQL:llä ja Dockerilla.",
                 "details": {
-                    "overview": "Lyhyt 2–3 rivin kuvaus projektista ja sen tarkoituksesta.",
+                    "overview": "X-it on kaksiosainen pakohuonealusta, kehitetty osana lyhytaikaista Erasmus+ -vaihto-opiskelijaprojektia yhteistyössä Alankomaista tulevien opiskelijoiden kanssa. Projekti sisälsi tablet-sovelluksen paikan päällä kirjautumiseen ja pulmien seurantaan (ryhmä 3 opiskelijaa) sekä backendin hallintajärjestelmän, joka tukee siihen liittyvää mobiilisosiaalista sovellusta (ryhmä 4 opiskelijaa). X-it-alusta tarjoaa kokonaisratkaisun pakohuoneiden hallintaan, mukaan lukien huoneiden hallinta, pelien aikataulutus ja varausten käsittely. Varmistaa sujuvan koordinoinnin paikan päällä tapahtuvien aktiviteettien ja mobiilikäyttäjien välillä. Alusta mahdollistaa pelaajien etenemisen seurannan, istuntotilastot ja reaaliaikaiset päivitykset sekä henkilökunnalle että pelaajille.",
                     "features": [
-                        "Tärkeimmät toiminnot luettelopisteissä"
+                        "Tablettisovellus check-iniin QR-lippujen skannausta varten",
+                        "Reaaliaikainen pulmien ja vihjeiden tilan seuranta (simuloitu Firebasellä)",
+                        "Automaattinen istuntojen seuranta ja tilastot (aika, käytetyt vihjeet, onnistuminen/epäonnistuminen)",
+                        "Tulostaulut ja piilotettujen vihjeiden saavutukset",
+                        "Mobiilisovellus tilastojen, tulostaulukoiden ja muiden pelaajien seuraamiseen",
+                        "Yrityskäyttöinen hallinta: huoneiden aikataulutus, yritysprofiilit ja tilaukset"
                     ],
                     "techStack": [
-                        "React",
-                        "Node.js",
-                        "PostgreSQL"
+                        "React Native",
+                        "TypeScript",
+                        "Nest.js",
+                        "PostgreSQL",
+                        "Docker",
+                        "Firebase (laitteiston simulointiin)"
                     ],
                     "challenges": [
-                        "Lyhyt osio, joka kuvaa ainakin yhtä teknistä haastetta ja sen ratkaisua."
+                        "Suurin haaste oli pakohuoneen laitteiston simulointi ilman fyysisiä laitteita. Ratkaistiin integroimalla Firebase simuloimaan pulmien tilasignaaleja ja vihjeiden laukaisuja reaaliajassa."
                     ],
                     "role": [
-                        "Oma panokseni projektiin."
+                        "Osallistuin osa-aikaisesti backend-kehittäjänä. Kehitin backend-ominaisuuksia pelien, pelaajien ja varausten hallintaan, varmistaen varauksien pätevyyden, pelaajien linkittämisen peleihin ja datan johdonmukaisuuden sovelluksessa.",
+                        "Toteutin yrityskohtaisia ominaisuuksia, kuten rekisteröitymisen, huoneiden hallinnan ja aikataulutuksen",
+                        "Työskentelin Firebase-integraation parissa laitteistojen simulointia varten tablet-sovelluksessa",
+                        "Avustin Docker-konttien asetusten ja konfiguroinnin toteutuksessa"
                     ]
                 },
                 "links": [
                     {
                         "type": "github",
-                        "url": "https://github.com/yourusername/xit-project"
+                        "url": "https://github.com/oamk-fontys/X-it-back-end"
+                    },
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/X-itOS"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1DXj9GvRWpvcBLgPs0MP7Yp7aC3ZYOx_u/view"
                     }
                 ],
                 "image": "xit"

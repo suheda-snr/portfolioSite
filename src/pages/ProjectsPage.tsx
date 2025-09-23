@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import ProjectCard, { ProjectData } from '../components/ProjectCard';
+import ProjectCard from '../components/ProjectCard';
+import { ProjectData } from '../types/projects';
 import '../styles/pages/ProjectsPage.css';
 
 const ProjectsPage: React.FC = () => {

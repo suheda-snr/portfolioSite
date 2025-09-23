@@ -1,35 +1,8 @@
 import React from 'react';
 import '../styles/ProjectCard.css';
 import { Link } from 'react-router-dom';
+import { ProjectCardProps } from '../types/projects';
 
-export interface ProjectLink {
-    label: string;
-    type: 'github' | 'live' | 'demo';
-    url: string;
-}
-
-export interface ProjectDetails {
-    overview: string;
-    features: string[];
-    techStack: string[];
-    challenges: string[];
-    role: string[];
-}
-
-export interface ProjectData {
-    id: string;
-    label: string;
-    title: string;
-    description: string;
-    details: ProjectDetails;
-    links: ProjectLink[];
-    image: string;
-    image2?: string;
-}
-
-interface ProjectCardProps {
-    project: ProjectData;
-}
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 

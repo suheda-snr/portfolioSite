@@ -179,30 +179,49 @@
             },
             {
                 "id": "xit-project",
-                "label": "IT Project",
-                "title": "X IT Project",
-                "description": "Brief description of what the project does and its purpose.",
+                "label": "Mobile App Project",
+                "title": "X-it Project",
+                "description": "An integrated escape room system with a tablet check-in app and a social mobile app, built using React Native, Nest.js, PostgreSQL, and Docker.",
                 "details": {
-                    "overview": "Brief 2–3 lines describing the project and its purpose.",
+                    "overview": "X-it is a two-part escape room platform developed as part of a short-term Erasmus+ exchange project in collaboration with students from the Netherlands. The project included a tablet app for on-site check-in and puzzle monitoring (team of 3 students) and a backend with a management system supporting a related mobile social app (team of 4 students). The X-it platform provides a complete solution for escape room operations, including managing rooms, scheduling games, and handling bookings.It ensures smooth coordination between on-site activities and mobile user engagement. The platform allows tracking of player progress, session statistics, and provides real-time updates for both staff and players.",
                     "features": [
-                        "Main functionalities in bullet points"
+                        "Tablet check-in app with QR ticket scanning",
+                        "Real-time monitoring of puzzle and clue status (simulated with Firebase)",
+                        "Automatic session tracking and statistics (time, hints used, success/failure)",
+                        "Leaderboards and hidden clue achievements",
+                        "Mobile social app for viewing stats, leaderboards, and connecting with other players",
+                        "Company-side management for room scheduling, company profiles, and subscriptions"
                     ],
                     "techStack": [
-                        "React",
-                        "Node.js",
-                        "PostgreSQL"
+                        "React Native",
+                        "TypeScript",
+                        "Nest.js",
+                        "PostgreSQL",
+                        "Docker",
+                        "Firebase (for hardware simulation)"
                     ],
                     "challenges": [
-                        "Short section describing at least one technical challenge and how you solved it."
+                        "The biggest challenge was simulating escape room hardware without physical devices. This was solved by integrating Firebase to replicate real-time signals from puzzle status and clue triggers."
                     ],
                     "role": [
-                        "What you personally contributed."
+                        "Contributed part-time as a backend developer. I developed backend features to manage games, players, and bookings, ensuring valid bookings, linking players to games, and keeping data consistent with the app.",
+                        "Implemented company-side features such as registration, room management, and scheduling",
+                        "Worked on Firebase integration to simulate hardware interactions for the tablet app",
+                        "Assisted in containerization setup with Docker"
                     ]
                 },
                 "links": [
                     {
                         "type": "github",
-                        "url": "https://github.com/yourusername/xit-project"
+                        "url": "https://github.com/oamk-fontys/X-it-back-end"
+                    },
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/X-itOS"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1DXj9GvRWpvcBLgPs0MP7Yp7aC3ZYOx_u/view"
                     }
                 ],
                 "image": "xit"

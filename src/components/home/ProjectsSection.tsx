@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import ProjectCard, { ProjectData } from '../ProjectCard';
+import ProjectCard from '../ProjectCard';
+import { ProjectData } from '../../types/projects';
 import '../../styles/home/ProjectsSection.css';
 import { Link } from 'react-router-dom';
 
