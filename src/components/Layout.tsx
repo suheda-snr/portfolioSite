@@ -39,9 +39,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                             <li className="nav-item">
                                 <Link className="nav-link" to="/projects">{t('nav.projects')}</Link>
                             </li>
-                            <li className="nav-item">
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" to="/blogs">{t('nav.blogs')}</Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item">
                                 <button onClick={toggleLanguage} className="language-toggle-button nav-link">
                                     <ReactCountryFlag
