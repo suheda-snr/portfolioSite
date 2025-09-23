@@ -203,6 +203,7 @@
                         "TypeScript",
                         "Nest.js",
                         "PostgreSQL",
+                        "Prisma ORM",
                         "Docker",
                         "Firebase (laitteiston simulointiin)"
                     ],
