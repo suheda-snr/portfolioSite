@@ -11,6 +11,15 @@ const IntroSection: React.FC = () => {
     const [showGreeting, setShowGreeting] = useState(true);
     const [showName, setShowName] = useState(false);
     const [typedParagraphs, setTypedParagraphs] = useState<string[]>([]);
+    const [showDownloadButton, setShowDownloadButton] = useState(false);
+
+    const handleDownloadCV = () => {
+        const cvUrl = '/cv.pdf';
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        link.download = 'Sener_Suheda_CV.pdf';
+        link.click();
+    };
 
     useEffect(() => {
         setTypedParagraphs([]);
@@ -27,6 +36,9 @@ const IntroSection: React.FC = () => {
             const paraDuration = para.length * charTypingDelay;
             const timer = setTimeout(() => {
                 setTypedParagraphs((prev) => [...prev, para]);
+                if (index === introParagraphs.length - 1) {
+                    setShowDownloadButton(true);
+                }
             }, cumulativeDelay);
             cumulativeDelay += paraDuration + 250;
             return timer;
@@ -61,6 +73,11 @@ const IntroSection: React.FC = () => {
                                 <TypingText text={para} start={true} className="paragraph-text" typingSpeed={100} />
                             </div>
                         ))}
+                        {showDownloadButton && (
+                            <button className="btn btn-primary mt-4" style={{ backgroundColor: '#00BFFF' }} onClick={handleDownloadCV}>
+                                {t('intro.cv')}
+                            </button>
+                        )}
                     </section>
                     <div className="col-lg-6 text-center image-section">
                         <img src={profilePic} alt={t('intro.name')} className="profile-image img-fluid" />

@@ -8,7 +8,7 @@ const AboutSection: React.FC = () => {
 
     return (
         <div className="about-wrapper">
-            <div className="container about-section px-md-5" >
+            <div className="container about-section px-md-5">
                 <div className="row">
                     <div className="col">
                         <h2 className="mb-4">{t('about.title')}</h2>

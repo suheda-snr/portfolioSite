@@ -16,7 +16,8 @@
         "paragraphs": [
             "I love creating things that make everyday life easier, especially when they start from a small idea and turn into a working solution.",
             "I'm curious, practical, and enjoy building something visible and useful digitally."
-        ]
+        ],
+        "cv": "Download CV"
     },
     "langSwitch": {
         "en": "In English",
@@ -87,6 +88,10 @@
                     {
                         "type": "github",
                         "url": "https://github.com/suheda-snr/nordflix"
+                    },
+                    {
+                        "type": "live",
+                        "url": "https://green-bay-0f0301810.4.azurestaticapps.net/"
                     }
                 ],
                 "image": "nordflix"

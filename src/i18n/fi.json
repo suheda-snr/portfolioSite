@@ -16,7 +16,8 @@
         "paragraphs": [
             "Rakastan tehdä asioita, jotka helpottavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
             "Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
-        ]
+        ],
+        "cv": "Lataa CV"
     },
     "langSwitch": {
         "en": "In English",
@@ -87,6 +88,10 @@
                     {
                         "type": "github",
                         "url": "https://github.com/suheda-snr/nordflix"
+                    },
+                    {
+                        "type": "live",
+                        "url": "https://green-bay-0f0301810.4.azurestaticapps.net/"
                     }
                 ],
                 "image": "nordflix"
