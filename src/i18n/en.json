@@ -159,6 +159,7 @@
                         "PostgreSQL",
                         "Prisma ORM",
                         "Docker",
+                        "Zustand",
                         "Firebase (for hardware simulation)"
                     ],
                     "challenges": [
@@ -393,6 +394,7 @@
         "otherSkillsTitle": "Other Skills",
         "otherSkills": [
             "Kotlin",
+            "React Native",
             "Express",
             "Figma",
             "PostgreSQL",
