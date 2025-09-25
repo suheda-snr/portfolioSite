@@ -45,6 +45,47 @@
         "seeAll": "Näytä kaikki",
         "projectList": [
             {
+                "id": "matchnplay",
+                "label": "Urheilun otteluiden sopimisalusta (Kehitteillä)",
+                "title": "MatchNPlay",
+                "description": "Oma projekti, jonka aloitin huomatessani tarpeen helpolle tavalle löytää pelejä ja pelikavereita. Työstän parhaillaan taustajärjestelmää, jossa on kirjautuminen, joukkueiden hallinta ja keskusteluominaisuudet.",
+                "details": {
+                    "overview": "MatchNPlay on käynnissä oleva projekti, jossa kehitän urheilun otteluiden sopimisalustaa. Sen avulla käyttäjät voivat järjestää pelejä, muodostaa joukkueita ja kommunikoida chatin ja palautteiden avulla. Taustajärjestelmä rakennetaan skaalautuvaksi ja sisältää kirjautumisen.",
+                    "features": [
+                        "Työn alla: OTP-pohjainen kirjautuminen",
+                        "Pelin luominen ja joukkueiden hallinta",
+                        "Keskustelu- ja palautetoiminnot",
+                        "Tulevaisuudessa aikataulujen ja ilmoitusten integrointi"
+                    ],
+                    "techStack": [
+                        "Java",
+                        "Spring Boot",
+                        "Redis",
+                        "PostgreSQL",
+                        "MailHog",
+                        "Docker"
+                    ],
+                    "challenges": [
+                        "Docker-ympäristön käyttöönotto taustajärjestelmälle ja tietokannalle",
+                        "OTP-pohjaisen kirjautumisen ja sähköpostivahvistuksen toteuttaminen MailHogilla",
+                        "Redis-välimuistin integrointi suorituskyvyn parantamiseksi",
+                        "Skaalautuvan tietokantarakenteen suunnittelu käyttäjille, peleille, joukkueille ja chatille"
+                    ],
+                    "role": [
+                        "Aloitin projektin itsenäisesti todetun tarpeen pohjalta",
+                        "Suunnittelen taustajärjestelmän arkkitehtuurin ja tietomallin",
+                        "Toteutan kirjautumisen, peli- ja joukkuelogiikan sekä viestintäominaisuudet"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/matchnplay"
+                    }
+                ],
+                "image": "matchnplay"
+            },
+            {
                 "id": "nordflix",
                 "label": "Edistynyt verkkosovellus",
                 "title": "NordFlix-elokuvasovellus",
@@ -97,93 +138,6 @@
                 "image": "nordflix"
             },
             {
-                "id": "tastopia",
-                "label": "Reseptien jakosovellus",
-                "title": "Tastopia",
-                "description": "Yhteisölähtöinen reseptialusta, jossa käyttäjät voivat jakaa, etsiä ja arvostella reseptejä intuitiivisella ja yhteisökeskeisellä käyttöliittymällä.",
-                "details": {
-                    "overview": "Tastopia on reseptienjakosovellus, joka kehitettiin ensimmäisenä verkkokehityskouluprojektinani 6 viikon aikana 4 hengen tiimissä. Sovellus yhdistää ruoan ystäviä reseptien jakamisen, etsimisen ja arvostelun kautta. Projekti sai arvosanan 5/5 ja sai palautetta siitä, että se oli edistyneempi kuin useimmat muut luokkatoverien projektit vankan ominaisuusvalikoimansa ja viimeistellyn käyttöliittymänsä ansiosta.",
-                    "features": [
-                        "Jaa omia reseptejä kuvauksilla ja kuvilla",
-                        "Hallitse jaettuja reseptejä (näytä/poista)",
-                        "Etsi reseptejä avainsanoilla tai kategorioilla",
-                        "Arvostele ja kommentoi muiden käyttäjien reseptejä",
-                        "Reseptiehdotuksia etusivulla",
-                        "Käyttäjäautentikointi JWT:llä (rekisteröityminen/kirjautuminen)",
-                        "Responsiivinen käyttöliittymä mobiili- ja työpöytäkäyttöön"
-                    ],
-                    "techStack": [
-                        "Figma",
-                        "HTML",
-                        "CSS",
-                        "Bootstrap",
-                        "JavaScript",
-                        "Node.js",
-                        "Express",
-                        "PostgreSQL",
-                        "Sequelize",
-                        "Scrum"
-                    ],
-                    "challenges": [
-                        "JWT-pohjaisen autentikoinnin toteuttaminen: Integroitiin JWT Express-väliohjelmistoon tokenien validoimiseksi, varmistaen, että vain rekisteröityneet käyttäjät voivat jakaa, arvostella tai kommentoida reseptejä.",
-                        "Responsiivisen käyttöliittymän kehittäminen: Käytettiin Bootstrapin ruudukkojärjestelmää ja mukautettuja CSS-mediatiedostoja luomaan saumaton kokemus mobiili- ja työpöytälaitteilla.",
-                        "Tiimiyhteistyö: Otettiin käyttöön Scrum-menetelmä päivittäisillä standup-kokouksilla ja HackNPlan-tehtävienhallinnalla, mikä mahdollisti tehokkaan viestinnän ja tehtävien jaon 4 hengen tiimissä."
-                    ],
-                    "role": [
-                        "Osallistuin tietokantaskeeman suunnitteluun PostgreSQL:llä ja Sequelize:llä",
-                        "Toteutin backend-rajapintoja Expressillä ominaisuuksiin, kuten reseptihaku ja käyttäjäautentikointi",
-                        "Rakensin keskeisiä frontend-sivuja, mukaan lukien etusivu, reseptitiedot ja hakutulokset, käyttäen HTML:ää, CSS:ää ja Bootstrapia"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/suheda-snr/tastopia"
-                    }
-                ],
-                "image": "tastopia",
-                "image2": "tastopia2"
-            },
-            {
-                "id": "duunitori",
-                "label": "Verkkokaavinta-automaatio",
-                "title": "Duunitori-työpaikkakaavinta",
-                "description": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
-                "details": {
-                    "overview": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
-                    "features": [
-                        "Pura työpaikan nimi, yritys ja tiedot HTML:stä",
-                        "Vie tiedot JSON-muodossa",
-                        "Automatisoidaan Windows Task Schedulerilla"
-                    ],
-                    "techStack": [
-                        "Puppeteer",
-                        "Node.js",
-                        "JavaScript"
-                    ],
-                    "challenges": [
-                        "Muuttuvan HTML-rakenteen käsittely: Käytettiin robusteja valitsimia ja varalogiikkaa.",
-                        "Automatisoitu päivittäinen suoritus Windows Task Schedulerilla."
-                    ],
-                    "role": [
-                        "Kirjoitin Puppeteer-kaavintaskriptejä",
-                        "Toteutin tietojen jäsentämisen ja JSON-viennin",
-                        "Määritin automaation"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/yourusername/duunitori-job-scraper"
-                    },
-                    {
-                        "type": "demo",
-                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
-                    }
-                ],
-                "image": "duunitori"
-            },
-            {
                 "id": "xit-project",
                 "label": "Mobiilisovellusprojekti",
                 "title": "X-it-projekti",
@@ -234,6 +188,54 @@
                 "image": "xit"
             },
             {
+                "id": "tastopia",
+                "label": "Reseptien jakosovellus",
+                "title": "Tastopia",
+                "description": "Yhteisölähtöinen reseptialusta, jossa käyttäjät voivat jakaa, etsiä ja arvostella reseptejä intuitiivisella ja yhteisökeskeisellä käyttöliittymällä.",
+                "details": {
+                    "overview": "Tastopia on reseptienjakosovellus, joka kehitettiin ensimmäisenä verkkokehityskouluprojektinani 6 viikon aikana 4 hengen tiimissä. Sovellus yhdistää ruoan ystäviä reseptien jakamisen, etsimisen ja arvostelun kautta. Projekti sai arvosanan 5/5 ja sai palautetta siitä, että se oli edistyneempi kuin useimmat muut luokkatoverien projektit vankan ominaisuusvalikoimansa ja viimeistellyn käyttöliittymänsä ansiosta.",
+                    "features": [
+                        "Jaa omia reseptejä kuvauksilla ja kuvilla",
+                        "Hallitse jaettuja reseptejä (näytä/poista)",
+                        "Etsi reseptejä avainsanoilla tai kategorioilla",
+                        "Arvostele ja kommentoi muiden käyttäjien reseptejä",
+                        "Reseptiehdotuksia etusivulla",
+                        "Käyttäjäautentikointi JWT:llä (rekisteröityminen/kirjautuminen)",
+                        "Responsiivinen käyttöliittymä mobiili- ja työpöytäkäyttöön"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "Bootstrap",
+                        "JavaScript",
+                        "Node.js",
+                        "Express",
+                        "PostgreSQL",
+                        "Sequelize",
+                        "Scrum"
+                    ],
+                    "challenges": [
+                        "JWT-pohjaisen autentikoinnin toteuttaminen: Integroitiin JWT Express-väliohjelmistoon tokenien validoimiseksi, varmistaen, että vain rekisteröityneet käyttäjät voivat jakaa, arvostella tai kommentoida reseptejä.",
+                        "Responsiivisen käyttöliittymän kehittäminen: Käytettiin Bootstrapin ruudukkojärjestelmää ja mukautettuja CSS-mediatiedostoja luomaan saumaton kokemus mobiili- ja työpöytälaitteilla.",
+                        "Tiimiyhteistyö: Otettiin käyttöön Scrum-menetelmä päivittäisillä standup-kokouksilla ja HackNPlan-tehtävienhallinnalla, mikä mahdollisti tehokkaan viestinnän ja tehtävien jaon 4 hengen tiimissä."
+                    ],
+                    "role": [
+                        "Osallistuin tietokantaskeeman suunnitteluun PostgreSQL:llä ja Sequelize:llä",
+                        "Toteutin backend-rajapintoja Expressillä ominaisuuksiin, kuten reseptihaku ja käyttäjäautentikointi",
+                        "Rakensin keskeisiä frontend-sivuja, mukaan lukien etusivu, reseptitiedot ja hakutulokset, käyttäen HTML:ää, CSS:ää ja Bootstrapia"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/tastopia"
+                    }
+                ],
+                "image": "tastopia",
+                "image2": "tastopia2"
+            },
+            {
                 "id": "portfolio",
                 "label": "Portfolio-sivusto",
                 "title": "Henkilökohtainen Portfolio",
@@ -272,6 +274,45 @@
                     }
                 ],
                 "image": "portfolio"
+            },
+            {
+                "id": "duunitori",
+                "label": "Verkkokaavinta-automaatio",
+                "title": "Duunitori-työpaikkakaavinta",
+                "description": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
+                "details": {
+                    "overview": "Automaatiotyökalu, joka jäljittelee API:a kaapimalla työpaikkailmoituksia Duunitorin verkkosivustolta Puppeteerin avulla.",
+                    "features": [
+                        "Pura työpaikan nimi, yritys ja tiedot HTML:stä",
+                        "Vie tiedot JSON-muodossa",
+                        "Automatisoidaan Windows Task Schedulerilla"
+                    ],
+                    "techStack": [
+                        "Puppeteer",
+                        "Node.js",
+                        "JavaScript"
+                    ],
+                    "challenges": [
+                        "Muuttuvan HTML-rakenteen käsittely: Käytettiin robusteja valitsimia ja varalogiikkaa.",
+                        "Automatisoitu päivittäinen suoritus Windows Task Schedulerilla."
+                    ],
+                    "role": [
+                        "Kirjoitin Puppeteer-kaavintaskriptejä",
+                        "Toteutin tietojen jäsentämisen ja JSON-viennin",
+                        "Määritin automaation"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/yourusername/duunitori-job-scraper"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
+                    }
+                ],
+                "image": "duunitori"
             },
             {
                 "id": "twilio-motivation",
@@ -325,6 +366,10 @@
                 "level": "90%"
             },
             {
+                "name": "Java",
+                "level": "80%"
+            },
+            {
                 "name": "TypeScript",
                 "level": "80%"
             },
@@ -347,7 +392,6 @@
         ],
         "otherSkillsTitle": "Muut taidot",
         "otherSkills": [
-            "Java",
             "Kotlin",
             "Express",
             "Figma",

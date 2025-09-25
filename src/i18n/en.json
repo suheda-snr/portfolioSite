@@ -45,6 +45,47 @@
         "seeAll": "See All",
         "projectList": [
             {
+                "id": "matchnplay",
+                "label": "Sports Matchmaking Web Platform (In Progress)",
+                "title": "MatchNPlay",
+                "description": "A solo project I started after noticing the need for players to easily find games and teammates. Currently building the backend with authentication, team management, and chat features.",
+                "details": {
+                    "overview": "MatchNPlay is an ongoing project where I’m developing a sports matchmaking platform. It helps people organize games, form teams, and connect with others through chat and feedback. The backend is being designed with scalable architecture and authentication.",
+                    "features": [
+                        "Work in progress: OTP-based authentication",
+                        "Game creation and team management",
+                        "Chat and feedback system",
+                        "Future integration of scheduling and notifications"
+                    ],
+                    "techStack": [
+                        "Java",
+                        "Spring Boot",
+                        "Redis",
+                        "PostgreSQL",
+                        "MailHog",
+                        "Docker"
+                    ],
+                    "challenges": [
+                        "Setting up a Dockerized development environment for backend and database",
+                        "Implementing OTP-based authentication and email verification with MailHog",
+                        "Integrating Redis caching to improve performance",
+                        "Designing a scalable database schema for users, games, teams, and chat"
+                    ],
+                    "role": [
+                        "Started as a solo initiative after identifying a real-world need",
+                        "Designing the backend architecture and schema",
+                        "Implementing authentication, game/team logic, and communication features"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/matchnplay"
+                    }
+                ],
+                "image": "matchnplay"
+            },
+            {
                 "id": "nordflix",
                 "label": "Advanced Web Application",
                 "title": "NordFlix Movie App",
@@ -97,93 +138,6 @@
                 "image": "nordflix"
             },
             {
-                "id": "tastopia",
-                "label": "Recipe Sharing Web Application",
-                "title": "Tastopia",
-                "description": "A recipe-sharing platform where users can share, search, and rate recipes with an intuitive, community-focused design.",
-                "details": {
-                    "overview": "Tastopia is a recipe-sharing platform developed as my first web development school project over 6 weeks in a team of 4. It connects food enthusiasts through sharing, searching, and rating recipes. The project earned a grade of 5/5 and received feedback for being ahead of most peers due to its robust features and polished UI.",
-                    "features": [
-                        "Share custom recipes with descriptions and images",
-                        "Manage shared recipes (view/delete)",
-                        "Search recipes by keywords or categories",
-                        "Rate and review other users’ recipes",
-                        "Recipe suggestions on homepage",
-                        "User authentication with JWT (register/login)",
-                        "Responsive UI for mobile and desktop"
-                    ],
-                    "techStack": [
-                        "Figma",
-                        "HTML",
-                        "CSS",
-                        "Bootstrap",
-                        "JavaScript",
-                        "Node.js",
-                        "Express",
-                        "PostgreSQL",
-                        "Sequelize",
-                        "Scrum"
-                    ],
-                    "challenges": [
-                        "Implementing JWT-based authentication: Integrated JWT with Express middleware to validate tokens, ensuring only registered users could share, rate, or review recipes.",
-                        "Building a responsive UI: Utilized Bootstrap’s grid system and custom CSS media queries to create a seamless experience across mobile and desktop devices.",
-                        "Team collaboration: Adopted Scrum methodology with daily standups and HackNPlan for task management, enabling effective communication and task division among the 4-person team."
-                    ],
-                    "role": [
-                        "Contributed to designing the database schema using PostgreSQL and Sequelize",
-                        "Implemented backend APIs with Express for features like recipe search and user authentication",
-                        "Built major frontend pages, including the homepage, recipe details, and search results, using HTML, CSS, and Bootstrap"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/suheda-snr/tastopia"
-                    }
-                ],
-                "image": "tastopia",
-                "image2": "tastopia2"
-            },
-            {
-                "id": "duunitori",
-                "label": "Web Scraping Automation",
-                "title": "Duunitori Job Scraper",
-                "description": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
-                "details": {
-                    "overview": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
-                    "features": [
-                        "Extract job title, company, and details from HTML",
-                        "Output data in JSON format",
-                        "Automated via Windows Task Scheduler"
-                    ],
-                    "techStack": [
-                        "Puppeteer",
-                        "Node.js",
-                        "JavaScript"
-                    ],
-                    "challenges": [
-                        "Navigating changing HTML structure: Used robust selectors and fallback logic",
-                        "Automated daily execution via Task Scheduler"
-                    ],
-                    "role": [
-                        "Wrote Puppeteer scraping scripts",
-                        "Implemented data parsing and JSON export",
-                        "Configured automation"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/suheda-snr/duunitori.fi-job-scraper"
-                    },
-                    {
-                        "type": "demo",
-                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
-                    }
-                ],
-                "image": "duunitori"
-            },
-            {
                 "id": "xit-project",
                 "label": "Mobile App Project",
                 "title": "X-it Project",
@@ -234,6 +188,54 @@
                 "image": "xit"
             },
             {
+                "id": "tastopia",
+                "label": "Recipe Sharing Web Application",
+                "title": "Tastopia",
+                "description": "A recipe-sharing platform where users can share, search, and rate recipes with an intuitive, community-focused design.",
+                "details": {
+                    "overview": "Tastopia is a recipe-sharing platform developed as my first web development school project over 6 weeks in a team of 4. It connects food enthusiasts through sharing, searching, and rating recipes. The project earned a grade of 5/5 and received feedback for being ahead of most peers due to its robust features and polished UI.",
+                    "features": [
+                        "Share custom recipes with descriptions and images",
+                        "Manage shared recipes (view/delete)",
+                        "Search recipes by keywords or categories",
+                        "Rate and review other users’ recipes",
+                        "Recipe suggestions on homepage",
+                        "User authentication with JWT (register/login)",
+                        "Responsive UI for mobile and desktop"
+                    ],
+                    "techStack": [
+                        "Figma",
+                        "HTML",
+                        "CSS",
+                        "Bootstrap",
+                        "JavaScript",
+                        "Node.js",
+                        "Express",
+                        "PostgreSQL",
+                        "Sequelize",
+                        "Scrum"
+                    ],
+                    "challenges": [
+                        "Implementing JWT-based authentication: Integrated JWT with Express middleware to validate tokens, ensuring only registered users could share, rate, or review recipes.",
+                        "Building a responsive UI: Utilized Bootstrap’s grid system and custom CSS media queries to create a seamless experience across mobile and desktop devices.",
+                        "Team collaboration: Adopted Scrum methodology with daily standups and HackNPlan for task management, enabling effective communication and task division among the 4-person team."
+                    ],
+                    "role": [
+                        "Contributed to designing the database schema using PostgreSQL and Sequelize",
+                        "Implemented backend APIs with Express for features like recipe search and user authentication",
+                        "Built major frontend pages, including the homepage, recipe details, and search results, using HTML, CSS, and Bootstrap"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/tastopia"
+                    }
+                ],
+                "image": "tastopia",
+                "image2": "tastopia2"
+            },
+            {
                 "id": "portfolio",
                 "label": "Portfolio Website",
                 "title": "Personal Portfolio",
@@ -272,6 +274,45 @@
                     }
                 ],
                 "image": "portfolio"
+            },
+            {
+                "id": "duunitori",
+                "label": "Web Scraping Automation",
+                "title": "Duunitori Job Scraper",
+                "description": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
+                "details": {
+                    "overview": "An automation tool that mimics an API by scraping job listings from Duunitori’s website using Puppeteer.",
+                    "features": [
+                        "Extract job title, company, and details from HTML",
+                        "Output data in JSON format",
+                        "Automated via Windows Task Scheduler"
+                    ],
+                    "techStack": [
+                        "Puppeteer",
+                        "Node.js",
+                        "JavaScript"
+                    ],
+                    "challenges": [
+                        "Navigating changing HTML structure: Used robust selectors and fallback logic",
+                        "Automated daily execution via Task Scheduler"
+                    ],
+                    "role": [
+                        "Wrote Puppeteer scraping scripts",
+                        "Implemented data parsing and JSON export",
+                        "Configured automation"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/duunitori.fi-job-scraper"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://drive.google.com/file/d/1LYbb-3Jpt9LsE4UHOdaEvD3aK5lQHO3b/view"
+                    }
+                ],
+                "image": "duunitori"
             },
             {
                 "id": "twilio-motivation",
@@ -325,6 +366,10 @@
                 "level": "90%"
             },
             {
+                "name": "Java",
+                "level": "80%"
+            },
+            {
                 "name": "TypeScript",
                 "level": "80%"
             },
@@ -347,7 +392,6 @@
         ],
         "otherSkillsTitle": "Other Skills",
         "otherSkills": [
-            "Java",
             "Kotlin",
             "Express",
             "Figma",
