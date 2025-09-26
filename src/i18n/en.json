@@ -60,10 +60,14 @@
                     "techStack": [
                         "Java",
                         "Spring Boot",
-                        "Redis",
+                        "Spring Security",
+                        "JWT",
                         "PostgreSQL",
+                        "Redis",
                         "MailHog",
-                        "Docker"
+                        "Docker",
+                        "Spring Data JPA",
+                        "Swagger / API Documentation"
                     ],
                     "challenges": [
                         "Setting up a Dockerized development environment for backend and database",
@@ -160,6 +164,7 @@
                         "Prisma ORM",
                         "Docker",
                         "Zustand",
+                        "Swagger",
                         "Firebase (for hardware simulation)"
                     ],
                     "challenges": [
