@@ -121,7 +121,7 @@
                     "role": [
                         "Developed full-stack features (frontend UI + backend APIs)",
                         "Integrated TMDb and Finnkino APIs",
-                        "Wrote automated Mocha tests",
+                        "Wrote automated unit and integrated tests using Mocha",
                         "Managed deployment and performance optimization"
                     ]
                 },

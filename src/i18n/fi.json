@@ -121,7 +121,7 @@
                     "role": [
                         "Kehitin full-stack-ominaisuuksia (frontend-käyttöliittymä ja backend-rajapinnat)",
                         "Integroin TMDb- ja Finnkino-API:t",
-                        "Kirjoitin automaattisia Mocha-testejä",
+                        "Kirjoitin automaattisia yksikkö- ja integrointitestejä Mochalla",
                         "Hallinnoin käyttöönottoa ja suorituskyvyn optimointia"
                     ]
                 },
