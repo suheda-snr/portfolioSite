@@ -6,12 +6,21 @@ import { ProjectCardProps } from '../types/projects';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
+    const imagesContext = (require as any).context('../assets', false, /\.(png|svg)$/);
+
     const getImageSrc = (imageName: string) => {
+        if (!imageName) return null;
+        const pngPath = `./${imageName}.png`;
+        const svgPath = `./${imageName}.svg`;
         try {
-            return require(`../assets/${imageName}.png`);
-        } catch (error) {
-            console.warn(`Image not found: ${imageName}.png`);
-            return null;
+            return imagesContext(pngPath);
+        } catch (e1) {
+            try {
+                return imagesContext(svgPath);
+            } catch (e2) {
+                console.warn(`Image not found in assets: ${imageName}`);
+                return null;
+            }
         }
     };
 

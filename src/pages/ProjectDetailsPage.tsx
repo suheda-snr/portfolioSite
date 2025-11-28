@@ -24,20 +24,29 @@ const ProjectDetailsPage: React.FC = () => {
         links: string;
     };
 
-    // Use image2 if exists, else fallback to image
+    const assetsContext = (require as any).context('../assets', false, /\.(png|svg)$/);
+
     const getHeroImage = (project: ProjectData) => {
-        if (project.image2) {
+        const tryResolve = (name?: string) => {
+            if (!name) return null;
+            const png = `./${name}.png`;
+            const svg = `./${name}.svg`;
             try {
-                return require(`../assets/tastopia2.png`);
+                return assetsContext(png);
             } catch {
-                return null;
+                try {
+                    return assetsContext(svg);
+                } catch {
+                    return null;
+                }
             }
+        };
+
+        if (project.image2) {
+            const i2 = tryResolve(project.image2);
+            if (i2) return i2;
         }
-        try {
-            return require(`../assets/${project.image}.png`);
-        } catch {
-            return null;
-        }
+        return tryResolve(project.image);
     };
 
     const heroImageSrc = getHeroImage(project);

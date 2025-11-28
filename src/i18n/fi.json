@@ -40,6 +40,12 @@
             "Java"
         ]
     },
+    "achievements": {
+        "title": "Saavutukset",
+        "items": [
+            "Qtathon25 — Sijoitus Top 10 noin 200 tiimistä (toisen kierroksen tulos odotetaan)"
+        ]
+    },
     "projects": {
         "sectionTitle": "Projektit",
         "seeAll": "Näytä kaikki",
@@ -319,6 +325,47 @@
                     }
                 ],
                 "image": "duunitori"
+            },
+            {
+                "id": "helios-sms",
+                "label": "Helios - Puvun valvontajärjestelmä (Helios SMS)",
+                "title": "Helios SMS",
+                "description": "Avaruuspuvun telemetrian valvonta- ja tehtävienhallintasovellus, rakennettu Pythonilla ja PySide6/Qt:lla. Sisältää simulaattorin ja MQTT-integraation.",
+                "details": {
+                    "overview": "Helios SMS on edistynyt avaruuspukujen telemetrian valvonta- ja tehtävienhallintajärjestelmä. Se tarjoaa reaaliaikaisen elintoimintojen seurannan, tehtävien hallinnan, turvallisuusvaroitukset ja puvun simulaattorin testausta varten. Qtathon25: sijoitus Top 10 noin 200 tiimistä (toisen kierroksen tulos odotetaan).",
+                    "features": [
+                        "Reaaliaikainen telemetria ja elintoimintojen seuranta",
+                        "Tehtäväsuunnittelu ja seuranta",
+                        "Monitasoiset turvallisuusvaroitukset äänellä",
+                        "Sisäänrakennettu puvun simulaattori testaukseen",
+                        "MQTT-pohjainen viestintä telemetrylle ja komennoille"
+                    ],
+                    "techStack": [
+                        "Python",
+                        "PySide6 / Qt",
+                        "paho-mqtt",
+                        "MQTT",
+                        "JSON-tallennus"
+                    ],
+                    "challenges": [
+                        "Realistisen telemetriasimulaation suunnittelu testausta varten",
+                        "Luotettavan MQTT-viestinnän ja topiikkien hallinnan varmistaminen",
+                        "Intuitiivisen kojelaudan suunnittelu kriittisille arvoille"
+                    ],
+                    "role": [
+                        "Toteutin telemetrian käsittelyn, simulaattorin ja MQTT-integraation",
+                        "Rakensin tehtävienhallinnan ja varoitusjärjestelmän",
+                        "Suunnittelin QML/Qt-käyttöliittymäkomponentit ja visualisoinnit"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/helios_sms"
+                    }
+                ],
+                "image": "helios",
+                "image2": "helios2"
             },
             {
                 "id": "twilio-motivation",

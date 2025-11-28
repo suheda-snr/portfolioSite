@@ -40,6 +40,12 @@
             "Java"
         ]
     },
+    "achievements": {
+        "title": "Achievements",
+        "items": [
+            "Qtathon25 — Placed in the Top 10 out of ~200 teams (second-round result pending)"
+        ]
+    },
     "projects": {
         "sectionTitle": "Projects",
         "seeAll": "See All",
@@ -354,6 +360,47 @@
                     }
                 ],
                 "image": "twilio"
+            },
+            {
+                "id": "helios-sms",
+                "label": "Helios - Suit Monitoring System (Helios SMS)",
+                "title": "Helios SMS",
+                "description": "Spacesuit telemetry monitoring and mission-management application built with Python & PySide6/Qt. Includes a simulator and MQTT integration.",
+                "details": {
+                    "overview": "Helios SMS is an advanced spacesuit telemetry monitoring and mission management system. It features real-time vitals monitoring, mission/task management, safety alerts, and a suit simulator for testing. Qtathon25: placed in the Top 10 out of ~200 teams (second-round result pending).",
+                    "features": [
+                        "Real-time telemetry and vitals monitoring",
+                        "Mission planning and task tracking",
+                        "Multi-level safety alerts with audio notifications",
+                        "Built-in suit simulator for test scenarios",
+                        "MQTT-based communication for telemetry and commands"
+                    ],
+                    "techStack": [
+                        "Python",
+                        "PySide6 / Qt",
+                        "paho-mqtt",
+                        "MQTT",
+                        "JSON storage"
+                    ],
+                    "challenges": [
+                        "Designing realistic telemetry simulation for testing",
+                        "Ensuring reliable MQTT messaging and topic handling",
+                        "Creating an intuitive dashboard for critical vitals"
+                    ],
+                    "role": [
+                        "Implemented telemetry processing, simulator, and MQTT integration",
+                        "Built mission/task management and alert handling",
+                        "Designed QML/Qt UI components and visualization"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/helios_sms"
+                    }
+                ],
+                "image": "helios",
+                "image2": "helios2"
             }
         ],
         "projectDetailsTitles": {
