@@ -378,6 +378,7 @@
                     "techStack": [
                         "Python",
                         "PySide6 / Qt",
+                        "QML",
                         "paho-mqtt",
                         "MQTT",
                         "JSON storage"
