@@ -52,20 +52,19 @@ const IntroSection: React.FC = () => {
 
     return (
         <div className="intro-wrapper">
-            <div className="container intro-section px-4 px-md-5">
+            <div className="container intro-section px-md-5">
                 <div className="row align-items-center">
                     <section id="intro" className="col-lg-6 text-section mb-4 mb-lg-0">
                         <TypingText
-                            text={t('intro.greeting')}
+                            text={t('intro.name')}
                             start={showGreeting}
-                            className="greeting-text"
+                            className="name-text"
                             typingSpeed={100}
                         />
-                        <br />
                         <TypingText
-                            text={t('intro.name')}
+                            text={t('intro.greeting')}
                             start={showName}
-                            className="name-text"
+                            className="greeting-text"
                             typingSpeed={100}
                         />
                         {typedParagraphs.map((para, i) => (
@@ -74,7 +73,7 @@ const IntroSection: React.FC = () => {
                             </div>
                         ))}
                         {showDownloadButton && (
-                            <button className="btn btn-primary mt-4" style={{ backgroundColor: '#00BFFF' }} onClick={handleDownloadCV}>
+                            <button className="btn btn-primary mt-4" style={{ backgroundColor: '#64ffda', color: '#0a192f', fontWeight: '600' }} onClick={handleDownloadCV}>
                                 {t('intro.cv')}
                             </button>
                         )}

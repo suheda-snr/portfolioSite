@@ -3,8 +3,13 @@
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    min-height: 250px;
+    min-height: 280px;
     margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
 }
 
 .project-image {
@@ -57,14 +62,16 @@
 }
 
 .project-label {
-    color: #fff;
+    color: #64ffda;
     padding: 0rem 0.9rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-family: 'Emitha', 'Arial', sans-serif;
     margin-bottom: 0.3rem;
     text-align: right;
     display: block;
     text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 .project-img-placeholder {
@@ -83,32 +90,54 @@
 .project-title {
     text-align: right;
     padding: 0rem 0.9rem;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
+    color: #ccd6f6;
+    margin-bottom: 0.7rem;
     font-family: 'Emitha', 'Arial', sans-serif;
+    line-height: 1.3;
 }
 
 .project-details {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    padding: 1.1rem;
-    padding-bottom: 0.4rem !important;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(17, 34, 64, 0.35) 100%);
+    backdrop-filter: blur(8px);
+    padding: 1.2rem;
+    padding-bottom: 0.6rem;
     border-radius: 8px;
+    border-left: 4px solid #64ffda;
+    border-top: 1px solid rgba(100, 255, 218, 0.15);
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.project-details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle, rgba(100, 255, 218, 0.12) 0%, transparent 70%);
+    border-radius: 0 8px 0 0;
+}
+
+.project-details:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.45) 0%, rgba(17, 34, 64, 0.45) 100%);
+    box-shadow: 0 10px 30px -15px rgba(100, 255, 218, 0.3);
 }
 
 .project-description {
-    font-size: 1.1rem;
-    line-height: 1.3;
-    color: #fff;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #d3d3d3;
+    padding-right: 8px;
 }
 
 .project-footer {
     display: flex;
     justify-content: flex-end;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    padding-bottom: 0.4rem;
 }
 
 .tech-stack {
@@ -119,12 +148,20 @@
 }
 
 .tech-item {
-    color: #d3d3d3;
+    color: #8892b0;
     font-size: 0.9rem;
     font-weight: 500;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 0.2rem 0.5rem;
-    border-radius: 12px;
+    background: rgba(100, 255, 218, 0.08);
+    padding: 0.35rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(100, 255, 218, 0.25);
+    transition: all 0.2s ease;
+}
+
+.tech-item:hover {
+    background: rgba(100, 255, 218, 0.12);
+    color: #64ffda;
+    transform: translateY(-1px);
 }
 
 a {
@@ -229,7 +266,7 @@ a {
 
     .tech-item {
         font-size: 0.85rem;
-        border-radius: 12px;
+        border-radius: 6px;
     }
 }
 

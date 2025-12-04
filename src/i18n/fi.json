@@ -7,15 +7,15 @@
     "sidebar": {
         "intro": "Johdanto",
         "about": "Tietoa minusta",
+        "experience": "Työkokemus",
         "projects": "Projektit",
         "skills": "Taidot"
     },
     "intro": {
-        "greeting": "Hei, olen",
+        "greeting": "Tervetuloa!",
         "name": "Suheda Sener",
         "paragraphs": [
-            "Rakastan tehdä asioita, jotka helpottavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi.",
-            "Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
+            "Rakastan tehdä asioita, jotka helpottavat arkea, erityisesti kun ne alkavat pienestä ideasta ja päätyvät toimivaksi ratkaisuksi. Olen utelias, käytännönläheinen ja nautin siitä, kun saan rakentaa jotain näkyvää ja hyödyllistä digitaalisesti."
         ],
         "cv": "Lataa CV:ni"
     },
@@ -30,11 +30,11 @@
         "experience": "Opiskelen parhaillaan tietotekniikkaa Oulun ammattikorkeakoulussa. Opintojeni aikana osallistuin eri yliopistojen yhteiseen Erasmus+ -projektiin Alankomaissa. Koulutukseni aikana olen työskennellyt useissa full-stack-projekteissa osana opintojani ja omaa kiinnostustani.",
         "techIntro": "Teknologiat, joiden parissa olen viime aikoina työskennellyt, ovat:",
         "techList": [
-            "JavaScript (ES6+)",
-            "TypeScript",
+            "JavaScript",
             "React",
+            "React Native",
             "Node.js",
-            "Azure",
+            "Python",
             "Express.js",
             "Docker",
             "Java"
@@ -45,6 +45,15 @@
         "items": [
             "Qtathon25 — Sijoitus Top 10 noin 200 tiimistä (toisen kierroksen tulos odotetaan)"
         ]
+    },
+    "experience": {
+        "title": "Työkokemus",
+        "role": "Fullstack-kehittäjä",
+        "company": "Zimba Oy",
+        "period": "Lokakuu 2025 - Nykyhetki",
+        "description": "Osallistun mobiilisovellusten full-stack-kehitykseen käyttäen React Nativea. Työskentelen nykyaikaisten teknologioiden ja kehysten parissa rakentaakseni skaalautuvia ratkaisuja osana kehitystiimiä.",
+        "aboutCompany": "Tietoa Zimbasta",
+        "companyDescription": "Zimba on suomalainen startup, joka kehittää innovatiivisia ohjelmistoratkaisuja ja digitaalisia alustoja."
     },
     "projects": {
         "sectionTitle": "Projektit",
@@ -414,14 +423,11 @@
         }
     },
     "skills": {
-        "mainSkills": [
+        "languagesFrameworksTitle": "Kielet & Kehykset",
+        "languagesFrameworks": [
             {
                 "name": "JavaScript",
                 "level": "90%"
-            },
-            {
-                "name": "Java",
-                "level": "80%"
             },
             {
                 "name": "TypeScript",
@@ -432,8 +438,28 @@
                 "level": "85%"
             },
             {
+                "name": "React Native",
+                "level": "80%"
+            },
+            {
+                "name": "Next.js",
+                "level": "75%"
+            },
+            {
                 "name": "Node.js",
                 "level": "85%"
+            },
+            {
+                "name": "Express.js",
+                "level": "85%"
+            },
+            {
+                "name": "Java",
+                "level": "80%"
+            },
+            {
+                "name": "Python",
+                "level": "75%"
             },
             {
                 "name": "HTML/CSS",
@@ -444,30 +470,28 @@
                 "level": "80%"
             }
         ],
-        "otherSkillsTitle": "Muut taidot",
-        "otherSkills": [
-            "Kotlin",
-            "Express",
-            "React Native",
-            "Figma",
+        "toolsPlatformsTitle": "Työkalut & Alustat",
+        "toolsPlatforms": [
             "PostgreSQL",
-            "Express.js",
             "MySQL",
-            "Database Design",
-            "API design",
-            "API testing and integration",
+            "Docker",
             "Azure",
             "Render",
             "Cloudflare",
             "GitHub",
-            "Puppeteer",
-            "Linux",
-            "Mocha",
-            "Automated Testing",
+            "Figma",
             "Postman",
+            "Puppeteer",
+            "Linux"
+        ],
+        "practicesTitle": "Kehityskäytännöt",
+        "practices": [
+            "API Design",
+            "Database Design",
+            "API Testing & Integration",
+            "Automated Testing",
             "Agile",
-            "Scrum",
-            "Microsoft Programs"
+            "Scrum"
         ]
     }
 }

@@ -7,15 +7,15 @@
     "sidebar": {
         "intro": "Intro",
         "about": "About Me",
+        "experience": "Experience",
         "projects": "Projects",
         "skills": "Skills"
     },
     "intro": {
-        "greeting": "Hi, my name is",
+        "greeting": "Welcome!",
         "name": "Suheda Sener",
         "paragraphs": [
-            "I love creating things that make everyday life easier, especially when they start from a small idea and turn into a working solution.",
-            "I'm curious, practical, and enjoy building something visible and useful digitally."
+            "I love creating things that make everyday life easier, especially when they start from a small idea and turn into a working solution. I'm curious, practical, and enjoy building something visible and useful digitally."
         ],
         "cv": "Download my CV"
     },
@@ -30,11 +30,11 @@
         "experience": "I am currently studying Information Technology at Oulu University of Applied Sciences. During my studies, I took part in a cross-university Erasmus+ project in the Netherlands. Throughout my education, I have worked on several full-stack projects as part of coursework and personal interest.",
         "techIntro": "Technologies I've been working with recently include:",
         "techList": [
-            "JavaScript (ES6+)",
-            "TypeScript",
+            "JavaScript",
             "React",
+            "React Native",
             "Node.js",
-            "Azure",
+            "Python",
             "Express.js",
             "Docker",
             "Java"
@@ -45,6 +45,15 @@
         "items": [
             "Qtathon25 — Placed in the Top 10 out of ~200 teams (second-round result pending)"
         ]
+    },
+    "experience": {
+        "title": "Experience",
+        "role": "Fullstack Developer",
+        "company": "Zimba Oy",
+        "period": "October 2025 - Present",
+        "description": "Contributing to full-stack development of mobile applications using React Native. Working with modern technologies and frameworks to build scalable solutions as part of a development team.",
+        "aboutCompany": "About Zimba",
+        "companyDescription": "Zimba is a Finnish startup developing innovative software solutions and digital platforms."
     },
     "projects": {
         "sectionTitle": "Projects",
@@ -414,14 +423,11 @@
         }
     },
     "skills": {
-        "mainSkills": [
+        "languagesFrameworksTitle": "Languages & Frameworks",
+        "languagesFrameworks": [
             {
                 "name": "JavaScript",
                 "level": "90%"
-            },
-            {
-                "name": "Java",
-                "level": "80%"
             },
             {
                 "name": "TypeScript",
@@ -432,8 +438,28 @@
                 "level": "85%"
             },
             {
+                "name": "React Native",
+                "level": "80%"
+            },
+            {
+                "name": "Next.js",
+                "level": "75%"
+            },
+            {
                 "name": "Node.js",
                 "level": "85%"
+            },
+            {
+                "name": "Express.js",
+                "level": "85%"
+            },
+            {
+                "name": "Java",
+                "level": "80%"
+            },
+            {
+                "name": "Python",
+                "level": "75%"
             },
             {
                 "name": "HTML/CSS",
@@ -444,30 +470,28 @@
                 "level": "80%"
             }
         ],
-        "otherSkillsTitle": "Other Skills",
-        "otherSkills": [
-            "Kotlin",
-            "React Native",
-            "Express",
-            "Figma",
+        "toolsPlatformsTitle": "Tools & Platforms",
+        "toolsPlatforms": [
             "PostgreSQL",
-            "Express.js",
             "MySQL",
-            "Database Design",
-            "API design",
-            "API testing and integration",
+            "Docker",
             "Azure",
             "Render",
             "Cloudflare",
             "GitHub",
-            "Puppeteer",
-            "Linux",
-            "Mocha",
-            "Automated Testing",
+            "Figma",
             "Postman",
+            "Puppeteer",
+            "Linux"
+        ],
+        "practicesTitle": "Development Practices",
+        "practices": [
+            "API Design",
+            "Database Design",
+            "API Testing & Integration",
+            "Automated Testing",
             "Agile",
-            "Scrum",
-            "Microsoft Programs"
+            "Scrum"
         ]
     }
 }

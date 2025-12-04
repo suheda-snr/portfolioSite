@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 const SectionSidebar: React.FC = () => {
     const [activeSection, setActiveSection] = useState('intro');
     const { t } = useTranslation();
-    const sections = ['intro', 'about', 'projects', 'skills'];
+    const sections = ['intro', 'about', 'experience', 'projects', 'skills'];
 
     const location = useLocation(); // get current route
 

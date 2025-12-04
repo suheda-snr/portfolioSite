@@ -12,16 +12,18 @@ const AboutSection: React.FC = () => {
                 <div className="row">
                     <div className="col">
                         <h2 className="mb-4">{t('about.title')}</h2>
-                        <div className="content-wrapper">
-                            <p>{t('about.description')}</p>
-                            <p>{t('about.story')}</p>
-                            <p>{t('about.experience')}</p>
-                            <p><strong>{t('about.techIntro')}</strong></p>
-                            <ul className="tech-list">
-                                {techList.map((tech, index) => (
-                                    <li key={index}>{tech}</li>
-                                ))}
-                            </ul>
+                        <div className="about-content">
+                            <div className="content-wrapper">
+                                <p>{t('about.description')}</p>
+                                <p>{t('about.story')}</p>
+                                <p>{t('about.experience')}</p>
+                                <p><strong>{t('about.techIntro')}</strong></p>
+                                <ul className="tech-list">
+                                    {techList.map((tech, index) => (
+                                        <li key={index}>{tech}</li>
+                                    ))}
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

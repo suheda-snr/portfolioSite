@@ -1,13 +1,16 @@
 @media (min-width: 780px) {
     .intro-wrapper {
         padding-left: 8rem;
-        padding-top: 5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        min-height: 80vh;
     }
 }
 
 .intro-section {
     color: #fff;
-    min-height: 80vh;
     max-width: 1150px;
 }
 
@@ -18,6 +21,11 @@
     align-items: flex-end;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 8px;
+}
+
+.profile-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px -15px rgba(100, 255, 218, 0.3);
 }
 
 /* Text fade-in */
@@ -33,25 +41,40 @@
 
 /* Typing styles */
 .greeting-text {
-    font-size: 1rem;
-    color: #a8a8a8;
+    font-size: 1.5rem;
+    color: #64ffda;
     font-family: 'Emitha', 'Arial', sans-serif;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.8rem;
     line-height: 1.4;
+    display: block;
+    font-weight: 500;
 }
 
 .name-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #ffffff;
-    margin: 0.5rem 0;
+    color: #ccd6f6;
+    margin: 0 0 40px 0;
     font-family: 'Emitha', 'Arial', sans-serif;
     line-height: 1.2;
+    position: relative;
+    display: inline-block;
+}
+
+.name-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #64ffda 0%, rgba(100, 255, 218, 0) 100%);
 }
 
 .paragraph-text {
-    font-size: 1.2rem;
-    color: #d3d3d3;
+    font-size: 1.15rem;
+    color: #8892b0;
     line-height: 1.6;
     font-family: 'Arial', sans-serif;
 }

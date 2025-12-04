@@ -9,7 +9,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
     object-fit: cover;
     filter: brightness(0.6);
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 /* Sections */
@@ -111,7 +111,7 @@
     background: rgba(0, 191, 255, 0.15);
     border: 1px solid #00bfff;
     padding: 0.3rem 0.8rem;
-    border-radius: 12px;
+    border-radius: 6px;
     font-size: 0.9rem;
 }
 
