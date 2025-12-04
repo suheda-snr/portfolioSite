@@ -1,5 +1,5 @@
 .project-details-wrapper {
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     font-family: "Arial", sans-serif;
     color: #fff;
 }
@@ -8,6 +8,8 @@
 .hero-banner {
     position: relative;
     width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 8px;
     display: flex;
@@ -26,23 +28,25 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin: 0;
-    color: #fff;
+    color: #ccd6f6;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(6px);
     border-radius: 6px;
+    padding: 0.5rem 1rem;
 }
 
 .hero-label {
     display: inline-block;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(100, 255, 218, 0.2);
     backdrop-filter: blur(6px);
-    color: #fff;
+    color: #64ffda;
     padding: 0.3rem 0.7rem;
     margin-top: 0.5rem;
     border-radius: 6px;
     font-size: 0.9rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.3);
 }
 
 .hero-img {
@@ -58,19 +62,43 @@
 .project-section {
     margin: 3rem auto;
     max-width: 1100px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    border-left: 3px solid #64ffda;
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.project-section:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateX(5px);
+    box-shadow: 0 10px 30px -15px rgba(100, 255, 218, 0.2);
 }
 
 .project-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: #00bfff;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ccd6f6;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.project-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #64ffda 0%, rgba(100, 255, 218, 0) 100%);
 }
 
 .project-section p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.6;
+    color: #8892b0;
 }
 
 .features-list,
@@ -83,11 +111,12 @@
 .features-list li,
 .challenges-list li,
 .role-list li {
-    padding-left: 1.2rem;
-    margin-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    margin-bottom: 0.75rem;
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 1.6;
+    color: #8892b0;
 }
 
 .features-list li::before,
@@ -96,44 +125,80 @@
     content: "▹";
     position: absolute;
     left: 0;
-    color: #00bfff;
-    font-size: 1.1rem;
+    color: #64ffda;
+    font-weight: bold;
 }
 
 /* Tech Stack */
 .tech-badges {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.75rem;
 }
 
 .badge {
-    background: rgba(0, 191, 255, 0.15);
-    border: 1px solid #00bfff;
-    padding: 0.3rem 0.8rem;
-    border-radius: 6px;
+    background: rgba(100, 255, 218, 0.1);
+    border: 1px solid #64ffda;
+    color: #64ffda;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
     font-size: 0.9rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.badge:hover {
+    background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-2px);
 }
 
 /* Links */
 .project-links-section {
     text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 8px;
+    border-left: 3px solid #64ffda;
+    padding: 30px;
+    margin: 3rem auto;
+    max-width: 1100px;
+}
+
+.project-links-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ccd6f6;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.project-links-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #64ffda 0%, rgba(100, 255, 218, 0) 100%);
 }
 
 .project-btn {
     display: inline-block;
-    background: #00bfff;
-    color: #fff;
-    padding: 0.6rem 1.2rem;
+    background: rgba(100, 255, 218, 0.1);
+    color: #64ffda;
+    padding: 0.8rem 1.5rem;
     margin: 0.5rem;
-    border-radius: 6px;
+    border-radius: 8px;
     font-weight: 600;
     text-decoration: none;
-    transition: transform 0.2s;
+    border: 1px solid #64ffda;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-btn:hover {
+    background: rgba(100, 255, 218, 0.2);
     transform: translateY(-2px);
+    box-shadow: 0 10px 30px -15px rgba(100, 255, 218, 0.3);
 }
 
 /* Back Button */
@@ -143,12 +208,15 @@
 }
 
 .back-btn {
-    color: #00bfff;
+    color: #64ffda;
     text-decoration: none;
     font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
 }
 
 .back-btn:hover {
+    color: #ccd6f6;
     text-decoration: underline;
 }
 
@@ -156,5 +224,14 @@
 @media (max-width: 768px) {
     .project-details-wrapper {
         padding: 2rem 1rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .project-section h2,
+    .project-links-section h2 {
+        font-size: 1.6rem;
     }
 }
