@@ -245,6 +245,10 @@
                     {
                         "type": "github",
                         "url": "https://github.com/suheda-snr/helios_sms"
+                    },
+                    {
+                        "type": "demo",
+                        "url": "https://screenrec.com/share/dga6i08ZjX"
                     }
                 ],
                 "image": "helios",
