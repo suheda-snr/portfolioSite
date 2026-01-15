@@ -1,12 +1,11 @@
 # Suheda's Portfolio Website
 
 ![Portfolio Logo](./src/assets/logo.png)  
-
-🚧 **This project is currently a work in progress.**  
+ 
 Welcome to my personal portfolio website!  
 This site showcases my work, projects, volunteer experience, and more about me as an IT student and aspiring full-stack developer.
 
-🌐 **Live URL**: [https://suhedasener.netlify.app](https://suhedasener.netlify.app)  
+🌐 **Live URL**: [suheda sener](https://suhedasener.com)  
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
