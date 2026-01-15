@@ -48,7 +48,7 @@
     },
     "experience": {
         "title": "Experience",
-        "role": "Fullstack Developer",
+        "role": "Fullstack Developer Intern",
         "company": "Zimba Oy",
         "period": "October 2025 - Present",
         "description": "Contributing to full-stack development of mobile applications using React Native. Working with modern technologies and frameworks to build scalable solutions as part of a development team.",
@@ -160,7 +160,7 @@
                 "id": "xit-project",
                 "label": "Mobile App Project",
                 "title": "X-it Project",
-                "description": "An integrated escape room system with a tablet check-in app and a social mobile app, built using React Native, Nest.js, PostgreSQL, and Docker.",
+                "description": "An integrated escape room system with a tablet check-in app and a social mobile app, featuring an escape room hardware simulator; built using React Native, Nest.js, PostgreSQL, and Docker.",
                 "details": {
                     "overview": "X-it is a two-part escape room platform developed as part of a short-term Erasmus+ exchange project in collaboration with students from the Netherlands. The project included a tablet app for on-site check-in and puzzle monitoring (team of 3 students) and a backend with a management system supporting a related mobile social app (team of 4 students). The X-it platform provides a complete solution for escape room operations, including managing rooms, scheduling games, and handling bookings.It ensures smooth coordination between on-site activities and mobile user engagement. The platform allows tracking of player progress, session statistics, and provides real-time updates for both staff and players.",
                     "features": [
@@ -207,6 +207,48 @@
                     }
                 ],
                 "image": "xit"
+            },
+            {
+                "id": "helios-sms",
+                "label": "Helios - Suit Monitoring System (Helios SMS)",
+                "title": "Helios SMS",
+                "description": "Spacesuit telemetry monitoring and mission-management application built with Python & PySide6/Qt. Includes a built-in simulator generating realistic sensor and emergency scenarios for testing, and MQTT integration.",
+                "details": {
+                    "overview": "Helios SMS is an advanced spacesuit telemetry monitoring and mission management system. It features real-time vitals monitoring, mission/task management, safety alerts, and a built-in simulator for realistic testing. Qtathon25: Finalist (Top 10 of ~200 teams).",
+                    "features": [
+                        "Real-time telemetry and vitals monitoring",
+                        "Mission planning and task tracking",
+                        "Multi-level safety alerts with audio notifications",
+                        "Built-in suit simulator for test scenarios",
+                        "MQTT-based communication for telemetry and commands"
+                    ],
+                    "techStack": [
+                        "Python",
+                        "PySide6 / Qt",
+                        "QML",
+                        "paho-mqtt",
+                        "MQTT",
+                        "JSON storage"
+                    ],
+                    "challenges": [
+                        "Designing realistic telemetry simulation for testing",
+                        "Ensuring reliable MQTT messaging and topic handling",
+                        "Creating an intuitive dashboard for critical vitals"
+                    ],
+                    "role": [
+                        "Implemented telemetry processing, simulator, and MQTT integration",
+                        "Built mission/task management and alert handling",
+                        "Designed QML/Qt UI components and visualization"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/helios_sms"
+                    }
+                ],
+                "image": "helios",
+                "image2": "helios2"
             },
             {
                 "id": "tastopia",
@@ -291,7 +333,7 @@
                     },
                     {
                         "type": "live",
-                        "url": "https://suhedasener.netlify.app/"
+                        "url": "https://suhedasener.com/"
                     }
                 ],
                 "image": "portfolio"
@@ -369,48 +411,6 @@
                     }
                 ],
                 "image": "twilio"
-            },
-            {
-                "id": "helios-sms",
-                "label": "Helios - Suit Monitoring System (Helios SMS)",
-                "title": "Helios SMS",
-                "description": "Spacesuit telemetry monitoring and mission-management application built with Python & PySide6/Qt. Includes a simulator and MQTT integration.",
-                "details": {
-                    "overview": "Helios SMS is an advanced spacesuit telemetry monitoring and mission management system. It features real-time vitals monitoring, mission/task management, safety alerts, and a suit simulator for testing. Qtathon25: placed in the Top 10 out of ~200 teams (second-round result pending).",
-                    "features": [
-                        "Real-time telemetry and vitals monitoring",
-                        "Mission planning and task tracking",
-                        "Multi-level safety alerts with audio notifications",
-                        "Built-in suit simulator for test scenarios",
-                        "MQTT-based communication for telemetry and commands"
-                    ],
-                    "techStack": [
-                        "Python",
-                        "PySide6 / Qt",
-                        "QML",
-                        "paho-mqtt",
-                        "MQTT",
-                        "JSON storage"
-                    ],
-                    "challenges": [
-                        "Designing realistic telemetry simulation for testing",
-                        "Ensuring reliable MQTT messaging and topic handling",
-                        "Creating an intuitive dashboard for critical vitals"
-                    ],
-                    "role": [
-                        "Implemented telemetry processing, simulator, and MQTT integration",
-                        "Built mission/task management and alert handling",
-                        "Designed QML/Qt UI components and visualization"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/suheda-snr/helios_sms"
-                    }
-                ],
-                "image": "helios",
-                "image2": "helios2"
             }
         ],
         "projectDetailsTitles": {
@@ -434,6 +434,10 @@
                 "level": "80%"
             },
             {
+                "name": "Python",
+                "level": "80%"
+            },
+            {
                 "name": "React",
                 "level": "85%"
             },
@@ -442,24 +446,12 @@
                 "level": "80%"
             },
             {
-                "name": "Next.js",
-                "level": "75%"
-            },
-            {
                 "name": "Node.js",
                 "level": "85%"
             },
             {
-                "name": "Express.js",
-                "level": "85%"
-            },
-            {
                 "name": "Java",
-                "level": "80%"
-            },
-            {
-                "name": "Python",
-                "level": "75%"
+                "level": "70%"
             },
             {
                 "name": "HTML/CSS",
@@ -472,13 +464,14 @@
         ],
         "toolsPlatformsTitle": "Tools & Platforms",
         "toolsPlatforms": [
+            "Wireshark",
             "PostgreSQL",
             "MySQL",
             "Docker",
             "Azure",
             "Render",
             "Cloudflare",
-            "GitHub",
+            "Git",
             "Figma",
             "Postman",
             "Puppeteer",

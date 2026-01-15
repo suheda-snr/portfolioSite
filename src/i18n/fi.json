@@ -48,7 +48,7 @@
     },
     "experience": {
         "title": "Työkokemus",
-        "role": "Fullstack-kehittäjä",
+        "role": "Fullstack-kehittäjä harjoittelija",
         "company": "Zimba Oy",
         "period": "Lokakuu 2025 - Nykyhetki",
         "description": "Osallistun mobiilisovellusten full-stack-kehitykseen käyttäen React Nativea. Työskentelen nykyaikaisten teknologioiden ja kehysten parissa rakentaakseni skaalautuvia ratkaisuja osana kehitystiimiä.",
@@ -160,7 +160,7 @@
                 "id": "xit-project",
                 "label": "Mobiilisovellusprojekti",
                 "title": "X-it-projekti",
-                "description": "Integroitu pakohuonejärjestelmä, jossa on tablettipohjainen check-in-sovellus ja sosiaalinen mobiilisovellus, toteutettu React Nativella, Nest.js:llä, PostgreSQL:llä ja Dockerilla.",
+                "description": "Integroitu pakohuonejärjestelmä, jossa on tablettipohjainen check-in-sovellus ja sosiaalinen mobiilisovellus, sisältäen pakohuonelaitteiston simulaattorin; toteutettu React Nativella, Nest.js:llä, PostgreSQL:llä ja Dockerilla.",
                 "details": {
                     "overview": "X-it on kaksiosainen pakohuonealusta, kehitetty osana lyhytaikaista Erasmus+ -vaihto-opiskelijaprojektia yhteistyössä Alankomaista tulevien opiskelijoiden kanssa. Projekti sisälsi tablet-sovelluksen paikan päällä kirjautumiseen ja pulmien seurantaan (ryhmä 3 opiskelijaa) sekä backendin hallintajärjestelmän, joka tukee siihen liittyvää mobiilisosiaalista sovellusta (ryhmä 4 opiskelijaa). X-it-alusta tarjoaa kokonaisratkaisun pakohuoneiden hallintaan, mukaan lukien huoneiden hallinta, pelien aikataulutus ja varausten käsittely. Varmistaa sujuvan koordinoinnin paikan päällä tapahtuvien aktiviteettien ja mobiilikäyttäjien välillä. Alusta mahdollistaa pelaajien etenemisen seurannan, istuntotilastot ja reaaliaikaiset päivitykset sekä henkilökunnalle että pelaajille.",
                     "features": [
@@ -207,6 +207,48 @@
                     }
                 ],
                 "image": "xit"
+            },
+            {
+                "id": "helios-sms",
+                "label": "Helios - Puvun valvontajärjestelmä (Helios SMS)",
+                "title": "Helios SMS",
+                "description": "Avaruuspuvun telemetrian valvonta- ja tehtävienhallintasovellus, rakennettu Pythonilla ja PySide6/Qt:lla. Sisältää sisäänrakennetun simulaattorin, joka tuottaa realistisia anturi- ja hätätilanneskenaarioita testaukseen, sekä MQTT-integraation.",
+                "details": {
+                    "overview": "Helios SMS on edistynyt avaruuspukujen telemetrian valvonta- ja tehtävienhallintajärjestelmä. Se tarjoaa reaaliaikaisen elintoimintojen seurannan, tehtävien hallinnan, turvallisuusvaroitukset ja sisäänrakennetun simulaattorin realistista testausta varten. Qtathon25: Finalisti (Top 10 noin 200 tiimistä).",
+                    "features": [
+                        "Reaaliaikainen telemetria ja elintoimintojen seuranta",
+                        "Tehtäväsuunnittelu ja seuranta",
+                        "Monitasoiset turvallisuusvaroitukset äänellä",
+                        "Sisäänrakennettu puvun simulaattori testaukseen",
+                        "MQTT-pohjainen viestintä telemetrylle ja komennoille"
+                    ],
+                    "techStack": [
+                        "Python",
+                        "PySide6 / Qt",
+                        "QML",
+                        "paho-mqtt",
+                        "MQTT",
+                        "JSON-tallennus"
+                    ],
+                    "challenges": [
+                        "Realistisen telemetriasimulaation suunnittelu testausta varten",
+                        "Luotettavan MQTT-viestinnän ja topiikkien hallinnan varmistaminen",
+                        "Intuitiivisen kojelaudan suunnittelu kriittisille arvoille"
+                    ],
+                    "role": [
+                        "Toteutin telemetrian käsittelyn, simulaattorin ja MQTT-integraation",
+                        "Rakensin tehtävienhallinnan ja varoitusjärjestelmän",
+                        "Suunnittelin QML/Qt-käyttöliittymäkomponentit ja visualisoinnit"
+                    ]
+                },
+                "links": [
+                    {
+                        "type": "github",
+                        "url": "https://github.com/suheda-snr/helios_sms"
+                    }
+                ],
+                "image": "helios",
+                "image2": "helios2"
             },
             {
                 "id": "tastopia",
@@ -291,7 +333,7 @@
                     },
                     {
                         "type": "live",
-                        "url": "https://suhedasener.netlify.app/"
+                        "url": "https://suhedasener.com/"
                     }
                 ],
                 "image": "portfolio"
@@ -334,48 +376,6 @@
                     }
                 ],
                 "image": "duunitori"
-            },
-            {
-                "id": "helios-sms",
-                "label": "Helios - Puvun valvontajärjestelmä (Helios SMS)",
-                "title": "Helios SMS",
-                "description": "Avaruuspuvun telemetrian valvonta- ja tehtävienhallintasovellus, rakennettu Pythonilla ja PySide6/Qt:lla. Sisältää simulaattorin ja MQTT-integraation.",
-                "details": {
-                    "overview": "Helios SMS on edistynyt avaruuspukujen telemetrian valvonta- ja tehtävienhallintajärjestelmä. Se tarjoaa reaaliaikaisen elintoimintojen seurannan, tehtävien hallinnan, turvallisuusvaroitukset ja puvun simulaattorin testausta varten. Qtathon25: sijoitus Top 10 noin 200 tiimistä (toisen kierroksen tulos odotetaan).",
-                    "features": [
-                        "Reaaliaikainen telemetria ja elintoimintojen seuranta",
-                        "Tehtäväsuunnittelu ja seuranta",
-                        "Monitasoiset turvallisuusvaroitukset äänellä",
-                        "Sisäänrakennettu puvun simulaattori testaukseen",
-                        "MQTT-pohjainen viestintä telemetrylle ja komennoille"
-                    ],
-                    "techStack": [
-                        "Python",
-                        "PySide6 / Qt",
-                        "QML",
-                        "paho-mqtt",
-                        "MQTT",
-                        "JSON-tallennus"
-                    ],
-                    "challenges": [
-                        "Realistisen telemetriasimulaation suunnittelu testausta varten",
-                        "Luotettavan MQTT-viestinnän ja topiikkien hallinnan varmistaminen",
-                        "Intuitiivisen kojelaudan suunnittelu kriittisille arvoille"
-                    ],
-                    "role": [
-                        "Toteutin telemetrian käsittelyn, simulaattorin ja MQTT-integraation",
-                        "Rakensin tehtävienhallinnan ja varoitusjärjestelmän",
-                        "Suunnittelin QML/Qt-käyttöliittymäkomponentit ja visualisoinnit"
-                    ]
-                },
-                "links": [
-                    {
-                        "type": "github",
-                        "url": "https://github.com/suheda-snr/helios_sms"
-                    }
-                ],
-                "image": "helios",
-                "image2": "helios2"
             },
             {
                 "id": "twilio-motivation",
@@ -434,6 +434,10 @@
                 "level": "80%"
             },
             {
+                "name": "Python",
+                "level": "80%"
+            },
+            {
                 "name": "React",
                 "level": "85%"
             },
@@ -442,24 +446,12 @@
                 "level": "80%"
             },
             {
-                "name": "Next.js",
-                "level": "75%"
-            },
-            {
                 "name": "Node.js",
                 "level": "85%"
             },
             {
-                "name": "Express.js",
-                "level": "85%"
-            },
-            {
                 "name": "Java",
-                "level": "80%"
-            },
-            {
-                "name": "Python",
-                "level": "75%"
+                "level": "70%"
             },
             {
                 "name": "HTML/CSS",
@@ -472,13 +464,14 @@
         ],
         "toolsPlatformsTitle": "Työkalut & Alustat",
         "toolsPlatforms": [
+            "Wireshark",
             "PostgreSQL",
             "MySQL",
             "Docker",
             "Azure",
             "Render",
             "Cloudflare",
-            "GitHub",
+            "Git",
             "Figma",
             "Postman",
             "Puppeteer",
